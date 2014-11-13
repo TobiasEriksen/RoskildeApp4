@@ -1174,7 +1174,7 @@
             isComposite="false" />
           <property
             Id="1651d40b-d92f-4cb2-aedb-3abffd72b220"
-            name="Bedømmelse"
+            name="Bedoemmelse"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1184,6 +1184,65 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="706c0062-3960-4be5-93a3-9a8c3ff129b3"
+            name="givBedoemmelse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="13aa6c52-246e-4a3a-8664-6e906a7585ab"
+                  name="id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fac417e8-13f0-4075-b280-a71ec247c764"
+                  name="navn"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d864a5d2-72ea-49ce-a7aa-8cc75f268f52"
+                  name="score"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="630a5dc5-3527-448d-b7e4-25908a00043e"
+                  name="bedoemmelse"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="98a3c34f-310f-444e-981e-ec1211f4736e"
+            name="hentBedoemmelser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6fef851-bd7f-4ffb-b61c-5a3cda6deb1e"
+                  name="id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1194,46 +1253,6 @@
         isLeaf="false"
         isActiveClass="false">
         <targetEnds>
-          <association
-            Id="df8ca5c6-1db7-4889-9cb0-6853581d3deb"
-            isDerived="false"
-            sourceEndRoleName="Bruger"
-            targetEndRoleName="Login"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="3d3cde44-8e08-472b-abf1-aad0e412981e"
-              LastKnownName="Login"
-              LastKnownLocation="UP Diagrammer.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9e8c7118-90f1-407a-8dcb-d739f58b4678"
-                  name="Bruger"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="203f97e5-1343-47cb-a497-4e5f57c833c8"
-                  name="Login"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="3b99f1e8-ec07-470c-b8d2-ae3d9b00c31b"
             isDerived="false"
@@ -1314,6 +1333,46 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="b285af9e-e4cc-49ca-8610-eb204f9ebc01"
+            isDerived="false"
+            sourceEndRoleName="Bruger"
+            targetEndRoleName="Besøgstæller"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fe071817-b787-4ba0-9367-3a438395978d"
+              LastKnownName="Besøgstæller"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b1e0876-b391-4dd9-ad03-f811f76148d8"
+                  name="Bruger"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d5d0f3d-ebba-4fb2-b2d9-9fd31a54f19f"
+                  name="Besøgstæller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -1349,6 +1408,30 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="a6a1aa2f-9081-4f78-92e2-19e95832e041"
+            name="_brugernavn"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="96a86990-9cae-4e42-936b-718d5effe416"
+            name="_password"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1358,52 +1441,71 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e64b5657-f9f6-4a07-8c16-09bfaa669167"
+                  name="navn"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5131631c-0714-4522-9ef3-9993163ba21e"
+                  name="password"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d997caac-dd1a-43cf-aadf-fbeb1daeb2c1"
+            name="RegistrerNyBruger"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b5f35b8a-4516-4620-9a65-43709b5766eb"
+                  name="brugernavn"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2adc6515-4dc1-4680-af1a-11ebf4f13cdf"
+                  name="password"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d13c7c3-31b5-4e39-a5e2-87aa48cd4adf"
+                  name="navn"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="19a70db4-0787-4d38-8a0c-af90efbcd4bf"
+                  name="email"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2e7f6fdb-0b01-44ae-badf-9a1aed34c185"
+                  name="telefon"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="3d3cde44-8e08-472b-abf1-aad0e412981e"
-        name="Login"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="905ab4fe-607a-4ff9-9e00-723ef4377e39"
-            name="Bruger"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="327f9341-9947-4f84-bc3f-87bac8ca7113"
-            name="Password"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="cce477bd-9ec3-44a5-8d96-f64681cba04c"
-            name="Opret Bruger"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1438,7 +1540,7 @@
             isComposite="false" />
           <property
             Id="6181e932-9927-4a84-9391-e6958d848a55"
-            name="Åbningstider"
+            name="Aabningstider"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1450,6 +1552,17 @@
           <property
             Id="c80beb08-6a0f-460f-b798-41fb24e935d8"
             name="Kategori"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="26f7025f-252e-400d-a80f-a8d5a1a24dc2"
+            name="Id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1481,19 +1594,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="cbf92395-b233-47af-a1b7-3a022c5dc38e"
-            name="Booking"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="3aa10823-4688-43b4-ba04-5d44508b9fcb"
-            name="Åbningstider"
+            name="Aabningstider"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1505,6 +1607,17 @@
           <property
             Id="fec946c5-5e5b-4a32-b701-d00c4efa7ef0"
             name="Placering på kort"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d92a3447-d0a9-472c-85d7-a311c14332a0"
+            name="Id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1547,17 +1660,6 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="a91d70d5-cb4d-491c-8872-2fed7ae6111f"
-            name="Booking"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="f8cd957e-ec33-484c-9879-a9f64561930c"
             name="Placeret på kort"
             isLeaf="false"
@@ -1581,7 +1683,18 @@
             isComposite="false" />
           <property
             Id="4a7e046f-e068-4391-97b3-1b9f865691c6"
-            name="Åbningstider"
+            name="Aabningstider"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5a378e33-c995-42b7-bc81-dc244aab2d65"
+            name="Id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1599,7 +1712,204 @@
         name="Besøgstæller"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="5465e322-e859-4636-920a-fd1b7c59700b"
+            isDerived="false"
+            sourceEndRoleName="Besøgstæller"
+            targetEndRoleName="Seværdigheder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1edbeb00-70c2-4816-9abf-d4e8989b571c"
+              LastKnownName="Seværdigheder"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8b644e17-2733-467f-a60e-a3d3318d1182"
+                  name="Besøgstæller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d948ce9-9a4c-4dc9-a2cb-10c111ae9733"
+                  name="Seværdigheder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b45f10fc-8926-4fdb-946b-197dd9904edb"
+            isDerived="false"
+            sourceEndRoleName="Besøgstæller"
+            targetEndRoleName="Spisesteder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6d2d5abe-bc4f-42da-89a9-35453c94050c"
+              LastKnownName="Spisesteder"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64509dc4-94be-40a1-9e69-c82ed2b76bc1"
+                  name="Besøgstæller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83ca0a3a-3bc6-4c25-b840-021907d01b8f"
+                  name="Spisesteder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="048927d0-99f9-4150-b4b7-90d39d3eca16"
+            isDerived="false"
+            sourceEndRoleName="Besøgstæller"
+            targetEndRoleName="Hoteller &amp; Overnatning"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="20913147-88b3-410d-9622-3987161bbde7"
+              LastKnownName="Hoteller &amp; Overnatning"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9aa8c7ef-efa4-46f0-b005-52265c8f5dc5"
+                  name="Besøgstæller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="102f418a-8285-4d10-9bb8-c9e9f3a317d5"
+                  name="Hoteller &amp; Overnatning"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2d15a33c-1140-4157-8f96-05343d056ced"
+            isDerived="false"
+            sourceEndRoleName="Besøgstæller"
+            targetEndRoleName="Butikker"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6eae6595-4103-45ae-a1dc-22eba27fd287"
+              LastKnownName="Butikker"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51e0f902-7cfe-4def-8199-b3e88b9a279c"
+                  name="Besøgstæller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b7b0491-509d-44ab-91fc-a13db53e647d"
+                  name="Butikker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="58810d75-0b5b-4cb8-a232-334c8ac737d6"
+            name="hitCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d0c98926-8d6e-4a14-b5f3-1bc0e2173625"
+            name="id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="93315b41-7f9e-4ea0-b946-45bc0abc8d89"
+            name="Counter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -1655,7 +1965,18 @@
             isComposite="false" />
           <property
             Id="8f83a6f4-4dcd-460d-a645-a7b6a908ab0f"
-            name="Åbningstider"
+            name="Aabningstider"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d55f234-805e-4127-9ab9-e1db4989c412"
+            name="Id"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

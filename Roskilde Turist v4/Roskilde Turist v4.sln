@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roskilde Turist v4", "Roski
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "UP Diagrammer", "UP Diagrammer\UP Diagrammer.modelproj", "{4F004620-5CE2-43FA-9DAE-2DE9F01A7CFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,16 @@ Global
 		{4F004620-5CE2-43FA-9DAE-2DE9F01A7CFA}.Release|ARM.ActiveCfg = Release|Any CPU
 		{4F004620-5CE2-43FA-9DAE-2DE9F01A7CFA}.Release|x64.ActiveCfg = Release|Any CPU
 		{4F004620-5CE2-43FA-9DAE-2DE9F01A7CFA}.Release|x86.ActiveCfg = Release|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Release|x64.ActiveCfg = Release|Any CPU
+		{3B4D2C1C-1149-4410-9B7C-C7BC91DACF9D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

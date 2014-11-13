@@ -1088,7 +1088,7 @@
             isAbstract="false">
             <classMoniker
               Id="6d2d5abe-bc4f-42da-89a9-35453c94050c"
-              LastKnownName="Spisesteder1"
+              LastKnownName="Spisesteder"
               LastKnownLocation="UP Diagrammer.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1128,7 +1128,7 @@
             isAbstract="false">
             <classMoniker
               Id="1edbeb00-70c2-4816-9abf-d4e8989b571c"
-              LastKnownName="Seværdigheder1"
+              LastKnownName="Seværdigheder"
               LastKnownLocation="UP Diagrammer.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1243,7 +1243,7 @@
             isAbstract="false">
             <classMoniker
               Id="6d2d5abe-bc4f-42da-89a9-35453c94050c"
-              LastKnownName="Spisesteder1"
+              LastKnownName="Spisesteder"
               LastKnownLocation="UP Diagrammer.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1349,18 +1349,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
-          <property
-            Id="c5f98227-acad-465e-bc47-962892f37635"
-            name="Booking"
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d51294ae-cc2b-4ae5-8862-88b4db56843e"
+            name="Login"
             isLeaf="false"
             isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1520,7 +1519,7 @@
     <packageHasNamedElement>
       <class
         Id="6d2d5abe-bc4f-42da-89a9-35453c94050c"
-        name="Spisesteder1"
+        name="Spisesteder"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1597,7 +1596,7 @@
     <packageHasNamedElement>
       <class
         Id="fe071817-b787-4ba0-9367-3a438395978d"
-        name="Besøgstæller1"
+        name="Besøgstæller"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -1605,7 +1604,7 @@
     <packageHasNamedElement>
       <class
         Id="1edbeb00-70c2-4816-9abf-d4e8989b571c"
-        name="Seværdigheder1"
+        name="Seværdigheder"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">

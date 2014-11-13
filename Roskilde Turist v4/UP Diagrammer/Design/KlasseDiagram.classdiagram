@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="99e6a86f-b07b-4c6e-b58d-0425e0b28d4e" name="KlasseDiagram" linkedPackageId="52f31e7a-0ab8-4a54-b719-bccbe3ff5b4b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="67130fb5-d506-4756-b59f-8cd433dfb7b7">
-      <profileInstance Id="5ebf16a1-c82f-4353-8e00-a16a84885a02" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="05adf055-36f7-4da1-9f05-3d2dafe102ac">
-      <profileInstance Id="a9a74d0a-efee-45b5-b12b-8454ac5c9668" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="9f396f7a-6233-42fe-95d3-4b164d4633d1" name="Kontakt" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -108,7 +94,7 @@
             <elementDefinition Id="5af4c55e-5c0f-4b30-b647-f5b918d73ddb" />
           </association>
           <association Id="96fd8a5e-c6df-4760-9146-1c603cb056ef" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Spisesteder" isLeaf="false" isAbstract="false">
-            <classMoniker Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" LastKnownName="Spisesteder1" />
+            <classMoniker Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" LastKnownName="Spisesteder" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="6d78e176-8f11-43ac-ab6b-865a17e0ed29" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -124,7 +110,7 @@
             <elementDefinition Id="b8a23599-9cd0-45bf-918b-dde9e503a806" />
           </association>
           <association Id="0dc4dcbf-ca7e-4375-9752-974692e4302f" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Seværdigheder" isLeaf="false" isAbstract="false">
-            <classMoniker Id="8b5b316b-3a7b-4c5d-871b-6437cc931af9" LastKnownName="Seværdigheder1" />
+            <classMoniker Id="8b5b316b-3a7b-4c5d-871b-6437cc931af9" LastKnownName="Seværdigheder" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="d86ab0cf-cda8-4da6-a7ba-79a60a98cc3a" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -171,7 +157,7 @@
             <elementDefinition Id="df8ca5c6-1db7-4889-9cb0-6853581d3deb" />
           </association>
           <association Id="af238162-4a69-40c7-a4a8-0bd8569e17a4" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Spisesteder" isLeaf="false" isAbstract="false">
-            <classMoniker Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" LastKnownName="Spisesteder1" />
+            <classMoniker Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" LastKnownName="Spisesteder" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ea9dae28-eb59-42a9-b05a-1e2697b50fd6" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -213,10 +199,12 @@
           <property Id="004213ce-a5ac-494e-a4f0-6ce47c990ddd" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7ac9cca9-1ca2-4523-8598-8553e3695f4b" />
           </property>
-          <property Id="cdec89ac-6c6f-46bd-8736-518b27b4551f" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c5f98227-acad-465e-bc47-962892f37635" />
-          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b4a254e2-3774-4c7d-be49-6b97683a6482" name="Login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d51294ae-cc2b-4ae5-8862-88b4db56843e" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -274,7 +262,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" name="Spisesteder1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" name="Spisesteder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6d2d5abe-bc4f-42da-89a9-35453c94050c" />
         <ownedAttributesInternal>
           <property Id="7f9884d8-ca38-497a-ab4e-c0b046b645d2" name="Menu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -299,12 +287,12 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2364c27b-3bd8-47a4-8800-ec067dd5391a" name="Besøgstæller1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2364c27b-3bd8-47a4-8800-ec067dd5391a" name="Besøgstæller" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fe071817-b787-4ba0-9367-3a438395978d" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8b5b316b-3a7b-4c5d-871b-6437cc931af9" name="Seværdigheder1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8b5b316b-3a7b-4c5d-871b-6437cc931af9" name="Seværdigheder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1edbeb00-70c2-4816-9abf-d4e8989b571c" />
         <ownedAttributesInternal>
           <property Id="64f2b5a2-14fe-48cd-a1ad-04b3117ec7cb" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -328,5 +316,19 @@
   </packagedElements>
   <package Id="52f31e7a-0ab8-4a54-b719-bccbe3ff5b4b" name="UP Diagrammer">
     <elementDefinition Id="925511a8-dd5f-444f-b896-baf2a9205a75" />
+    <profileInstances>
+      <packageHasProfileInstances Id="67130fb5-d506-4756-b59f-8cd433dfb7b7">
+        <profileInstance Id="5ebf16a1-c82f-4353-8e00-a16a84885a02" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="05adf055-36f7-4da1-9f05-3d2dafe102ac">
+        <profileInstance Id="a9a74d0a-efee-45b5-b12b-8454ac5c9668" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

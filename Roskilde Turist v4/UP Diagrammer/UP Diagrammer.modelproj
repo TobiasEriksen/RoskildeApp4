@@ -23,8 +23,18 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="BusinessModeling\DomainModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BusinessModeling\DomainModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BusinessModeling\DomainModel.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\UP Diagrammer.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Design" />
+    <Folder Include="BusinessModeling" />
+    <Folder Include="Requirement" />
   </ItemGroup>
 </Project>

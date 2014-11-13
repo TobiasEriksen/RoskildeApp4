@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="12902a00-2d47-431e-b72e-993fbbc80b93" name="DomainModel" linkedPackageId="eba54f95-d0ad-4736-b41b-6504bbfa7be4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="2d497038-a0b3-4fef-b67b-24fbefd4eb6f">
+      <profileInstance Id="5e497896-3e8d-4148-aaa6-25485af1ef57" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ec679e19-ca4e-4be0-992e-53b614c124c3">
+      <profileInstance Id="a8ec1f5a-f9e8-4d13-8583-2877f6e098f4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39c53efa-d2a4-49ce-b571-c8aa462570dd" name="Kontakt" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1b0df65-14d2-4eec-aff7-6ea8ec803fde" />
+        <targetEnds>
+          <association Id="7988b415-4d35-47d3-b830-2a04e3a87c24" isDerived="false" sourceEndRoleName="Kontakt" targetEndRoleName="Bruger" isLeaf="false" isAbstract="false">
+            <classMoniker Id="201c6f03-53b0-4d1f-8f41-afefbeef0ba9" LastKnownName="Bruger" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c4b6283-dec7-4c67-8d99-4bf206ea104d" name="Kontakt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f20508bf-9bf7-4407-9de1-ce69197cd9a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd37ae0d-d243-4975-bdc0-31f823b1eb3d" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2b2b4a90-739b-4016-9531-e56d4d40bfd1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c58c85e5-9a17-4a59-9c15-dbbb06757127" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2be2475a-9cad-4d40-970b-c8231cb4349f" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7bc860e4-95b9-4a96-a701-810dc71b9a87" />
+          </property>
+          <property Id="33515d46-e616-47a8-99a7-c8e215b37dfd" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="658fc8ca-5c16-49b8-b5e3-368dcfa62019" />
+          </property>
+          <property Id="9000510c-ba23-4f49-9036-827f88bf2196" name="Telefon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8de1425b-7670-4417-8a45-14f7a3912cfe" />
+          </property>
+          <property Id="876cbb4f-d979-4135-b0b1-d09bf7167f19" name="Sociale medier" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c3be069-5dc1-4665-8ff5-ccb1853b0385" />
+          </property>
+          <property Id="f30c3c11-bf8d-4fb4-a3e3-603760bdcf8c" name="Skriv email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c0a55f7-3c55-4edd-bff4-d135e29d3f0d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f35f0269-c48b-4db3-9fe6-d632fe041c32" name="Rating" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="563dd5cc-8246-45dd-b5de-bfe97f1d3c7f" />
+        <targetEnds>
+          <association Id="cb982387-489c-417a-8040-d9fed6026a3d" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Bruger" isLeaf="false" isAbstract="false">
+            <classMoniker Id="201c6f03-53b0-4d1f-8f41-afefbeef0ba9" LastKnownName="Bruger" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd9e7198-d3eb-48f4-905d-5d3ca57ad95f" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7274511d-592f-4608-94d9-e029ca6d1a4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f35a5d26-8a6e-41d7-b88c-0a21fba8d742" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ae0e4f77-41a7-4637-a147-7cce0b973a4a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4d8c8bef-83d2-4883-b3ec-47f4f93ea512" />
+          </association>
+          <association Id="f5d7bbd3-1785-4836-8aea-b12d2c431ba8" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Butikker" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a2c13464-46c2-49e0-b6fe-9a31f4a677d3" LastKnownName="Butikker" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fbaf1e8-8eb4-4983-8d3b-10ab2392909c" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67d0febc-3221-4091-82be-478c2b60bdd5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6450aa7b-e55d-4580-bdfa-2438b6f793fa" name="Butikker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e14c3623-788c-41d5-8b15-a711fc0c5806" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e1385778-c9d5-42d0-abba-a90d65ebc335" />
+          </association>
+          <association Id="a9a2ea8e-c52e-431d-96ec-655e384f6fbd" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Hoteller &amp; Overnatning" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2edf59e4-e9a9-426d-b6f1-0e5eb0dd581c" LastKnownName="Hoteller &amp; Overnatning" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fdf82b8-748f-4f69-8c98-82aa1cc6d7e6" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73e9a104-5ce6-4aa8-bf36-d6999c4c47c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ed1e0b8-7834-44d6-9b14-626f3c1509f7" name="Hoteller &amp; Overnatning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8e528cc0-169d-4ac0-8bcc-7fedac405884" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5f0573a-3467-4b42-a3b5-9ddd6ca4ff48" />
+          </association>
+          <association Id="a570e59f-2ad4-48ba-bf49-f7cd1e4709b6" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Spisesteder" isLeaf="false" isAbstract="false">
+            <classMoniker Id="71b138ea-c6ea-4cc6-9dbe-bbd922ac29ae" LastKnownName="Spisesteder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfc2d7d8-4a88-4c64-aeef-3decc7c0ed95" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cdbc2bef-346e-4689-88bd-407c4d384299" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d912cab-1545-4708-b132-c7c8accbdec7" name="Spisesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9acb4c41-9710-4eb6-b63f-f6689e265e7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fad50506-17d7-4552-8042-b4ef5ef398ac" />
+          </association>
+          <association Id="0c84594a-beda-480a-ad8c-d2973bb14bb9" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Seværdigheder" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ea0c8973-41d4-4a1f-8e28-96711e054816" LastKnownName="Seværdigheder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36055918-332e-4db5-a61c-662b76ddea91" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3951c3ee-dc27-436f-9e2b-c612dc83b62d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53f28053-9bab-4631-a77c-41b43c3fab8f" name="Seværdigheder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f8a5304f-c302-455e-bbf8-acb245bf87f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db044660-e81a-4d75-abfe-6f0c693dc3f9" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2cad1466-90d2-4a92-a8b0-8014361e3c24" name="Score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e656722c-13d4-4b8e-9bb9-b15e7241569d" />
+          </property>
+          <property Id="e4f9e06e-c6a5-4357-b693-285991ec56ef" name="Bedømmelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1172ee4c-84a5-4bf0-935a-f54782a5e6e5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="201c6f03-53b0-4d1f-8f41-afefbeef0ba9" name="Bruger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9f47cc1d-744b-45c4-b1b9-c5e7d1e13e85" />
+        <targetEnds>
+          <association Id="60582a83-188b-48a5-86bb-6a6ea4d87c2d" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9b5d006c-9831-496d-aeea-2ae1afb5d641" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f4da710-fa9c-4b4e-b695-f35c983b61bd" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d6e895d0-1c40-47f8-bf5b-cbd54e86c972" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d00ca90-5f6d-4e59-948f-3de37a34a836" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="600c698e-27b7-4c0c-8df3-3cf5f68872ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6ffbc4f9-fde9-4ce2-b6f7-41e98fd35856" />
+          </association>
+          <association Id="0ac31d01-3c57-4892-8534-5a3b060143c3" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Spisesteder" isLeaf="false" isAbstract="false">
+            <classMoniker Id="71b138ea-c6ea-4cc6-9dbe-bbd922ac29ae" LastKnownName="Spisesteder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5594424e-e215-469b-8018-080782f63e3c" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd639c7f-6eae-4335-bb6e-de908486a971" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0212ed24-8ff8-4698-ab4b-69e05039ed07" name="Spisesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ce403bb-e7f2-4576-a5d2-0815354f1682" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b2ac07ff-9d63-4672-a162-7b40e37e3716" />
+          </association>
+          <association Id="a558bae4-5f95-42c9-8bd5-a73f4e3bda45" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Hoteller &amp; Overnatning" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2edf59e4-e9a9-426d-b6f1-0e5eb0dd581c" LastKnownName="Hoteller &amp; Overnatning" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d4e4d74-06da-46da-a96e-8e88fd0a4b5c" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="82268afe-2929-4789-aa60-91fda89d2e7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d6e8a6d-a9cd-4d4a-80ca-2147c3cea0a3" name="Hoteller &amp; Overnatning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="841a9bce-e9d0-4d1f-9f33-f53fe1c16521" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7f47894-febf-408b-8d87-5b597a678b6b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1e07cde3-aacb-4ac1-8a61-f67284b199f7" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c4a24e7e-441b-474e-a63b-5529db90778c" />
+          </property>
+          <property Id="5856c54d-5721-43db-bd22-cd31c08a853b" name="Telefon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b3a03cf-b10e-4f5f-bf96-aaea2217fbf8" />
+          </property>
+          <property Id="437319e2-d29e-418d-87d2-ca6213a0722b" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3e5dc401-b83a-4018-abd1-f281fdf6396d" />
+          </property>
+          <property Id="06c29b2c-298d-45b7-8817-285b326e3c0d" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c6ef37b7-8c6c-4496-9532-877fbc4cb0b0" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9b5d006c-9831-496d-aeea-2ae1afb5d641" name="Login" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="751ed6b4-ee45-4288-9730-071749585b9c" />
+        <ownedAttributesInternal>
+          <property Id="cca497d2-62b3-498a-9a7a-168b573ba244" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7885f13e-3ef7-477f-b0d1-2d15a8a58960" />
+          </property>
+          <property Id="6625ce4c-b0df-41d0-830b-aadce39cd2a7" name="Password" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="321ed43f-4d2e-4e8a-9942-b22df785000d" />
+          </property>
+          <property Id="25af5419-b013-4d85-85df-e4c771387124" name="Opret Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b311b4dd-32ec-498b-a10c-05cf7229906c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a2c13464-46c2-49e0-b6fe-9a31f4a677d3" name="Butikker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9805b997-15e0-405e-affa-ba49daf13496" />
+        <ownedAttributesInternal>
+          <property Id="09c568eb-d3a4-44e1-b5e6-b9a46c532457" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a1ade80-7cfd-474e-9c80-7b709107b9b7" />
+          </property>
+          <property Id="c4d5ca26-abd7-4f9f-9bc4-4567f105de3b" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e91ced1-51ad-457f-89f4-feb0d9253d8d" />
+          </property>
+          <property Id="6ff87d48-0ecb-4fd3-a31e-0992ae32ed57" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eddc8768-f318-4c33-9e48-2b57b64578b0" />
+          </property>
+          <property Id="af7503d6-b4d7-4ad5-b271-1604979ee6bb" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2eb62dff-6a21-4b21-8719-60f17700539d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2edf59e4-e9a9-426d-b6f1-0e5eb0dd581c" name="Hoteller &amp; Overnatning" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db538cfc-613c-48c1-9199-d2c12f49defb" />
+        <ownedAttributesInternal>
+          <property Id="23b1db38-8dc0-4c50-acee-f476d79c08ae" name="Pladser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c76a763e-3498-4ac6-a988-a20b3f376eb1" />
+          </property>
+          <property Id="502fbefc-2f55-4b2e-9769-7c9c4a77ac69" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cac0a98f-2d90-4d9e-9777-89e2c24d7853" />
+          </property>
+          <property Id="4145511a-0a42-4a37-8c80-613e96d05135" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2a296285-17dd-4772-9f87-8e7957c89741" />
+          </property>
+          <property Id="4bf90487-4f98-40f0-959e-37cbc34ab307" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6d23e011-acd7-4810-8c14-b0ccf30f510b" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="71b138ea-c6ea-4cc6-9dbe-bbd922ac29ae" name="Spisesteder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ada2a263-aa45-4c34-882b-2705047faa74" />
+        <ownedAttributesInternal>
+          <property Id="6ba158f5-7a59-4e85-b641-fdcb15a4f6b6" name="Menu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="304e234a-9ab0-4a4c-906d-ea95509fae48" />
+          </property>
+          <property Id="4f53e6aa-926e-4143-a1ab-da107f6d632c" name="Pladser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a7c8fe33-1c81-488b-a391-08c56fc65a0a" />
+          </property>
+          <property Id="14003ba4-b76b-4b29-8e3d-94da21882a0b" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c980fd5e-0a58-4ba6-8acd-5ccf2e9484de" />
+          </property>
+          <property Id="0f68c59f-dc7f-46f0-8a12-104f601c4a64" name="Placeret på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98c69eb0-ed45-4497-85f0-292de2316926" />
+          </property>
+          <property Id="8307b2b3-c886-4d9c-a104-e7626caf129f" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1e6391fb-dcb2-4bca-b948-709a59efbbf2" />
+          </property>
+          <property Id="1e0f563e-fd0b-427b-bb0e-2f21e4d966df" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd1774f9-60dd-4c0c-97de-d3e3ceaf3c79" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="624418cf-83ca-4469-ae1a-741f2cd4ac29" name="Besøgstæller" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9bd207bb-f944-4f1d-8fce-08f1be1c9d26" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ea0c8973-41d4-4a1f-8e28-96711e054816" name="Seværdigheder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="632c7fc9-f509-42ad-a42d-e0fba2df44ec" />
+        <ownedAttributesInternal>
+          <property Id="73513ce2-3cf0-47f5-9534-6cda7c714ea2" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ae2d3fc-8ae1-4ba2-8a3b-81d8f9da02c7" />
+          </property>
+          <property Id="8eba10a0-8cd4-475e-b969-e0e0f96ff9c2" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af65fe9b-4fd9-48f0-938e-55fb21721eba" />
+          </property>
+          <property Id="44977a86-35f0-4c67-9945-0674cf789792" name="Tema" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77d57bfc-a503-43c6-a606-279e7fb45b32" />
+          </property>
+          <property Id="06dbd98a-4400-4acc-9863-628c997326ac" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35f6473f-0ce5-4dbd-a515-b71c0b8ff882" />
+          </property>
+          <property Id="fb7aa6e8-3790-4504-839d-06a4936de33a" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1ef58495-35a9-4006-b2cb-8552556348e7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="eba54f95-d0ad-4736-b41b-6504bbfa7be4" name="UP Diagrammer">
+    <elementDefinition Id="925511a8-dd5f-444f-b896-baf2a9205a75" />
+  </package>
+</logicalClassDesignerModel>

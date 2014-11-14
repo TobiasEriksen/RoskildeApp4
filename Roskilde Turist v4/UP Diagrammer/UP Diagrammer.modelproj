@@ -33,6 +33,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Design\KlasseDiagram.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Design\SekvensDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Design\SekvensDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Design\SekvensDiagram.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\UP Diagrammer.uml">
       <SubType>Content</SubType>
     </Content>

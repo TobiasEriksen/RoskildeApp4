@@ -131,10 +131,11 @@
     <Content Include="Assets\blue_background.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\magnifier.png" />
+    <Content Include="Assets\shop.png" />
+    <Content Include="Assets\shopgreen.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
-    <Content Include="Assets\user.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

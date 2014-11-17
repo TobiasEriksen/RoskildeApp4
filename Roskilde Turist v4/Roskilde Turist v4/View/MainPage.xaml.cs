@@ -102,5 +102,10 @@ namespace Roskilde_Turist_v4
         }
 
         #endregion
+
+        private void pageTitle_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

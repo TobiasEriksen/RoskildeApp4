@@ -48,21 +48,13 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" SelectionChanged="pageTitle_SelectionChanged" FontFamily="Kabel Bk BT"/>
-            <Button Grid.Column="1" BorderThickness="0" HorizontalAlignment="Left" Margin="1082,54,0,0" Padding="8" VerticalAlignment="Top">
-                <Image Source="../Assets/ffffff-magnifier12.png" Width="38" Height="38" />
-            </Button>
-            <Button Grid.Column="1" BorderThickness="0" HorizontalAlignment="Left" Margin="1155,54,0,0" Padding="8" VerticalAlignment="Top">
-                <Image Source="../Assets/" Width="38" Height="38" />
-            </Button>
+            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Zoom" Label="" Margin="1136,45,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Button HorizontalAlignment="Left" BorderThickness="0" Margin="120,100,0,0" Width="150" Grid.Row="1" Padding="0" VerticalAlignment="Top">
             <Image Source="../Assets/shop.png" VerticalAlignment="Top" />
         </Button>
         <Button HorizontalAlignment="Left" BorderThickness="0" Margin="300,100,0,0" Width="150" Grid.Row="1" Padding="0" VerticalAlignment="Top">
-            <Image Source="../Assets/shopgreen.png" VerticalAlignment="Top" />
-        </Button>
-        <Button HorizontalAlignment="Left" BorderThickness="0" Margin="480,100,0,0" Width="150" Grid.Row="1" Padding="0" VerticalAlignment="Top">
-            <Image Source="../Assets/shop.png" VerticalAlignment="Top" />
+            <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top" />
         </Button>
     </Grid>
 </Page>

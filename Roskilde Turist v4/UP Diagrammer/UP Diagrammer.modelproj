@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Design\SequenceDiagramKategorier.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Design\SequenceDiagramKategorier.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Design\SequenceDiagramKategorier.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="BusinessModeling\DomainModel.classdiagram">
       <SubType>Content</SubType>
@@ -33,12 +40,12 @@
       <SubType>Content</SubType>
       <DependentUpon>Design\KlasseDiagram.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Design\SekvensDiagram.sequencediagram">
+    <Content Include="Design\SekvensDiagramRatings.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Design\SekvensDiagram.sequencediagram.layout">
+    <Content Include="Design\SekvensDiagramRatings.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Design\SekvensDiagram.sequencediagram</DependentUpon>
+      <DependentUpon>Design\SekvensDiagramRatings.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\UP Diagrammer.uml">
       <SubType>Content</SubType>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="925511a8-dd5f-444f-b896-baf2a9205a75"
   name="UP Diagrammer" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -949,6 +949,16 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c799f172-218c-43d7-bfdc-4e89a7da3302"
+            name="visKontakt"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1436,7 +1446,7 @@
         <ownedOperationsInternal>
           <operation
             Id="d51294ae-cc2b-4ae5-8862-88b4db56843e"
-            name="Login"
+            name="doLogin"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1445,14 +1455,14 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e64b5657-f9f6-4a07-8c16-09bfaa669167"
+                  Id="ad912e6a-e0ff-40e3-8505-48fe93592852"
                   name="navn"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5131631c-0714-4522-9ef3-9993163ba21e"
+                  Id="d462d567-fdcd-401c-8d32-6a3504e07b0b"
                   name="password"
                   direction="In"
                   isUnique="false" />
@@ -1461,7 +1471,7 @@
           </operation>
           <operation
             Id="d997caac-dd1a-43cf-aadf-fbeb1daeb2c1"
-            name="RegistrerNyBruger"
+            name="registrerNyBruger"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1470,35 +1480,35 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b5f35b8a-4516-4620-9a65-43709b5766eb"
+                  Id="83618671-8459-4dcf-a600-ec63b572cbf0"
                   name="brugernavn"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="2adc6515-4dc1-4680-af1a-11ebf4f13cdf"
+                  Id="c4eca618-d230-4f18-8639-5062ce77a13a"
                   name="password"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="8d13c7c3-31b5-4e39-a5e2-87aa48cd4adf"
+                  Id="6dae1582-04f9-43f1-8227-5ad35efbb069"
                   name="navn"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="19a70db4-0787-4d38-8a0c-af90efbcd4bf"
+                  Id="7f9f3163-3a5c-44d0-b09e-f468dd89cad1"
                   name="email"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="2e7f6fdb-0b01-44ae-badf-9a1aed34c185"
+                  Id="2a37ce71-ac4e-4993-a34d-a42fc7c81df9"
                   name="telefon"
                   direction="In"
                   isUnique="false" />
@@ -1572,6 +1582,34 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a8bae194-a16d-4aaf-9b17-df024cb164fe"
+            name="visBedoemmelse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df651976-badb-42c6-8563-a05b632b16f2"
+                  name="id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="12a01cc7-c107-4587-8c01-3c9c5ad1ecab"
+            name="visData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1627,6 +1665,34 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5b6d1664-e723-49e3-ab35-9053b4a0bd8b"
+            name="visBedoemmelse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="580ab0e3-4a16-4ea0-aff8-e6542f17b494"
+                  name="id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a9f4bcd6-3dd3-4136-9a46-3e1e4e058fba"
+            name="visData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1704,6 +1770,34 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="695114a4-80f5-452f-9988-16aeb6024ebf"
+            name="visBedoemmelse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7e9765ff-60a7-46b0-8645-1fc7f98568c2"
+                  name="id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5241247f-0952-45d0-af8b-b2ba27a7d5ec"
+            name="visData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1986,6 +2080,34 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="513c9e91-ac69-4043-8bd9-b5414529683d"
+            name="visBedoemmelse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a48d1ab-67de-4381-8b26-54da036cece3"
+                  name="id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d9ccc6f5-8e04-4e47-a25c-67b3f5826a91"
+            name="visData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>

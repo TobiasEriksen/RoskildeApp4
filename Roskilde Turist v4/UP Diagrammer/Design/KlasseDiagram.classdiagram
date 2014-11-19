@@ -39,6 +39,11 @@
             <elementDefinition Id="2a3adaeb-19ff-42d8-8b6e-bb35c922bd5e" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f016b6fd-1047-44f9-9f16-b9ddc66989ee" name="visKontakt" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c799f172-218c-43d7-bfdc-4e89a7da3302" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -244,47 +249,47 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="b4a254e2-3774-4c7d-be49-6b97683a6482" name="Login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="b4a254e2-3774-4c7d-be49-6b97683a6482" name="doLogin" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="d51294ae-cc2b-4ae5-8862-88b4db56843e" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="32ec9af0-b58b-4df1-a1c0-b5836e262592" name="navn" direction="In" isUnique="false">
-                  <elementDefinition Id="e64b5657-f9f6-4a07-8c16-09bfaa669167" />
+                <parameter Id="47d6e9ed-4760-4d94-84f2-7de1df949ec8" name="navn" direction="In" isUnique="false">
+                  <elementDefinition Id="ad912e6a-e0ff-40e3-8505-48fe93592852" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="db267fd4-ac66-4089-9668-0edb12524eeb" name="password" direction="In" isUnique="false">
-                  <elementDefinition Id="5131631c-0714-4522-9ef3-9993163ba21e" />
+                <parameter Id="98642611-97fd-4372-9397-84ede23fae83" name="password" direction="In" isUnique="false">
+                  <elementDefinition Id="d462d567-fdcd-401c-8d32-6a3504e07b0b" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="e5fb746c-6f36-4282-9151-4ca094d349c3" name="RegistrerNyBruger" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="e5fb746c-6f36-4282-9151-4ca094d349c3" name="registrerNyBruger" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="d997caac-dd1a-43cf-aadf-fbeb1daeb2c1" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="59ccf679-68ec-43e2-bf3d-ea7dc6273f85" name="brugernavn" direction="In" isUnique="false">
-                  <elementDefinition Id="b5f35b8a-4516-4620-9a65-43709b5766eb" />
+                <parameter Id="6f0424bc-4030-42ae-a7bd-67d27ad0bb63" name="brugernavn" direction="In" isUnique="false">
+                  <elementDefinition Id="83618671-8459-4dcf-a600-ec63b572cbf0" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="5aac685c-b5d7-47c6-a563-b68ab66d7765" name="password" direction="In" isUnique="false">
-                  <elementDefinition Id="2adc6515-4dc1-4680-af1a-11ebf4f13cdf" />
+                <parameter Id="a73f6a94-e300-4424-a4c5-0dd3799b71b4" name="password" direction="In" isUnique="false">
+                  <elementDefinition Id="c4eca618-d230-4f18-8639-5062ce77a13a" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="9d4b4d94-504c-45a3-8fb9-6b3586526ab0" name="navn" direction="In" isUnique="false">
-                  <elementDefinition Id="8d13c7c3-31b5-4e39-a5e2-87aa48cd4adf" />
+                <parameter Id="beb74765-2f21-4913-913b-0ecd269580e5" name="navn" direction="In" isUnique="false">
+                  <elementDefinition Id="6dae1582-04f9-43f1-8227-5ad35efbb069" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="d32c3aea-6564-4ce2-8b0e-344f8a7b1295" name="email" direction="In" isUnique="false">
-                  <elementDefinition Id="19a70db4-0787-4d38-8a0c-af90efbcd4bf" />
+                <parameter Id="926167bc-74c5-4c2c-879e-649058dc05d6" name="email" direction="In" isUnique="false">
+                  <elementDefinition Id="7f9f3163-3a5c-44d0-b09e-f468dd89cad1" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="53a579f1-9cdb-4f73-87ed-90f072691178" name="telefon" direction="In" isUnique="false">
-                  <elementDefinition Id="2e7f6fdb-0b01-44ae-badf-9a1aed34c185" />
+                <parameter Id="bb5a7e34-a02e-4777-819c-0757056aef05" name="telefon" direction="In" isUnique="false">
+                  <elementDefinition Id="2a37ce71-ac4e-4993-a34d-a42fc7c81df9" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -312,6 +317,21 @@
             <elementDefinition Id="26f7025f-252e-400d-a80f-a8d5a1a24dc2" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="38d491f6-b3d4-4b37-a3e6-07b7feb49a8b" name="visBedoemmelse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a8bae194-a16d-4aaf-9b17-df024cb164fe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7df58f8d-a4f1-4c38-8ee2-e9188e03f815" name="id" direction="In" isUnique="false">
+                  <elementDefinition Id="df651976-badb-42c6-8563-a05b632b16f2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ec97620c-c06b-4290-be4e-007c6894c7d4" name="visData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="12a01cc7-c107-4587-8c01-3c9c5ad1ecab" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -331,6 +351,21 @@
             <elementDefinition Id="d92a3447-d0a9-472c-85d7-a311c14332a0" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="28b6de44-ad7d-487b-b083-ac122e8db35f" name="visBedoemmelse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b6d1664-e723-49e3-ab35-9053b4a0bd8b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a21255c1-b855-4120-aefe-3b7192db9689" name="id" direction="In" isUnique="false">
+                  <elementDefinition Id="580ab0e3-4a16-4ea0-aff8-e6542f17b494" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b3bafded-b6a0-449f-9990-db7d792372c6" name="visData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a9f4bcd6-3dd3-4136-9a46-3e1e4e058fba" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -356,6 +391,21 @@
             <elementDefinition Id="5a378e33-c995-42b7-bc81-dc244aab2d65" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1505ecb7-f592-4a2c-8444-9e87750df127" name="visBedoemmelse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="695114a4-80f5-452f-9988-16aeb6024ebf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="23bdf9dd-940d-4fea-b77d-c075d56e0954" name="id" direction="In" isUnique="false">
+                  <elementDefinition Id="7e9765ff-60a7-46b0-8645-1fc7f98568c2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6dbcfcf0-a326-477f-bbec-f8571cd05c17" name="visData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5241247f-0952-45d0-af8b-b2ba27a7d5ec" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -465,6 +515,21 @@
             <elementDefinition Id="6d55f234-805e-4127-9ab9-e1db4989c412" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="07706782-8213-46e6-9958-bdb7fd115d0a" name="visBedoemmelse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="513c9e91-ac69-4043-8bd9-b5414529683d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ba2025b9-cbc3-47c5-8e75-1d036efc36dd" name="id" direction="In" isUnique="false">
+                  <elementDefinition Id="8a48d1ab-67de-4381-8b26-54da036cece3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="446e1d4d-cd43-4d2d-a772-2d11de7642ef" name="visData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d9ccc6f5-8e04-4e47-a25c-67b3f5826a91" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

@@ -88,7 +88,7 @@
       <associationMoniker Id="96fd8a5e-c6df-4760-9146-1c603cb056ef" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.8489608320915689, 2.3203124900658954, 0.125, 0.14800345897674561" shapeFieldName="SourceMultiplicity" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.8559052761220922, 2.3203124900658954, 0.125, 0.14800345897674561" shapeFieldName="SourceMultiplicity" />
       </moveableDecoratorHostShapes>
       <nodes>
         <classShapeMoniker Id="97790c96-4c56-4088-9543-781c1e9dfc69" />

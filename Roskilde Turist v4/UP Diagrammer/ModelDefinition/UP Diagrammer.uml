@@ -1455,14 +1455,14 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ad912e6a-e0ff-40e3-8505-48fe93592852"
-                  name="navn"
+                  Id="83b8714e-bfbf-4310-b350-47f151b517e1"
+                  name="brugernavn"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="d462d567-fdcd-401c-8d32-6a3504e07b0b"
+                  Id="e18c7a77-73d7-4a55-b858-7ec981ede081"
                   name="password"
                   direction="In"
                   isUnique="false" />

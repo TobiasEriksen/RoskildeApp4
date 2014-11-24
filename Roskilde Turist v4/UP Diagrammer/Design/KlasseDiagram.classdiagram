@@ -253,13 +253,13 @@
             <elementDefinition Id="d51294ae-cc2b-4ae5-8862-88b4db56843e" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="47d6e9ed-4760-4d94-84f2-7de1df949ec8" name="navn" direction="In" isUnique="false">
-                  <elementDefinition Id="ad912e6a-e0ff-40e3-8505-48fe93592852" />
+                <parameter Id="6892fa92-74ba-4e4e-a4fc-9ea87bc6e0e9" name="brugernavn" direction="In" isUnique="false">
+                  <elementDefinition Id="83b8714e-bfbf-4310-b350-47f151b517e1" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="98642611-97fd-4372-9397-84ede23fae83" name="password" direction="In" isUnique="false">
-                  <elementDefinition Id="d462d567-fdcd-401c-8d32-6a3504e07b0b" />
+                <parameter Id="7c810def-f92a-4231-b572-b0450728cc5a" name="password" direction="In" isUnique="false">
+                  <elementDefinition Id="e18c7a77-73d7-4a55-b858-7ec981ede081" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>

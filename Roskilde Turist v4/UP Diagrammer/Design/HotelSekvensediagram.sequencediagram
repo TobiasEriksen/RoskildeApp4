@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="ccbdfb7e-27b4-48ec-ba73-2c6a647a67a3" name="HotelSekvensediagram" linkedPackageId="6825b5eb-b477-47dc-b0f1-649a7bee3ee9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dc7f70fd-bbee-40b2-a307-5bd46d2626c8">
+      <profileInstance Id="a571662b-aff8-46ea-ad47-4ee2eb7dcc64" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="948ed23e-92a5-46b4-a909-462c08ea100c">
+      <profileInstance Id="4f43577b-b921-4f02-b811-4d5167d64453" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="0ea1de3e-cf1a-4570-b2f4-318221ea1f45" name="HotelSekvensediagram" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="5f983cdf-64a2-4187-a738-4737484f709f" />
+        <fragments>
+          <behaviorExecutionSpecification Id="749fd2c1-6a2c-4138-afd9-b8ec6e1e8ef0" name="BehaviorExecutionSpecification1">
+            <elementDefinition Id="5702df17-5645-4690-bc6d-ea0931d5c884" />
+            <coveredLifelines>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c9ad4944-906b-434f-b061-db8d2e77ab05" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="b9510554-13f0-442a-8208-13ab35890926" LastKnownName="ExecutionOccurrenceSpecification1" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="fe3efad3-181b-43f1-8686-df47e770b983" LastKnownName="MessageOccurrenceSpecification2" />
+              <messageOccurrenceSpecificationMoniker Id="56c38558-f21f-4ecf-b44e-b1564058d569" LastKnownName="MessageOccurrenceSpecification5" />
+              <messageOccurrenceSpecificationMoniker Id="b4b93c28-2bff-4756-834f-c39936c40aa7" LastKnownName="MessageOccurrenceSpecification8" />
+              <messageOccurrenceSpecificationMoniker Id="92ecc824-4cc9-492a-b76a-67a1181ba2f1" LastKnownName="MessageOccurrenceSpecification21" />
+              <messageOccurrenceSpecificationMoniker Id="15589a5f-03b3-4852-b9d3-69c49f6851ed" LastKnownName="MessageOccurrenceSpecification24" />
+              <messageOccurrenceSpecificationMoniker Id="167075be-873b-4b6b-815e-570dc24bacb9" LastKnownName="MessageOccurrenceSpecification3" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="b9510554-13f0-442a-8208-13ab35890926" name="ExecutionOccurrenceSpecification1">
+            <elementDefinition Id="a46e7140-3731-47b7-a5fb-eb73d7fbe3b3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="952ca22f-6b82-4250-b976-3ec828c84a3d" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="864b0241-24dc-4984-9900-294235e38c9a" name="MessageOccurrenceSpecification1">
+            <elementDefinition Id="2e1075b2-0359-440f-a35d-2bdb041733f2" />
+            <covered>
+              <lifelineMoniker Id="c78b33a1-50ff-4e06-9bef-86e8cb01d3ac" LastKnownName="Bruger" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="fe3efad3-181b-43f1-8686-df47e770b983" name="MessageOccurrenceSpecification2">
+            <elementDefinition Id="2434e01a-c0ac-4c69-a74e-653564cfa062" />
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="1e6019e3-98d5-4d06-920a-f77048be10e0" name="BehaviorExecutionSpecification2">
+            <elementDefinition Id="cdd9b333-be83-4053-bf3b-ce1557084efc" />
+            <coveredLifelines>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="6d192ceb-6b24-4873-8c4a-4f9a9d3ea0b2" LastKnownName="ExecutionOccurrenceSpecification4" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3a9a9bb5-7659-47a2-b722-36ff167e9df0" LastKnownName="ExecutionOccurrenceSpecification3" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="4a8e6965-68e4-40af-ad18-9c9cd1a71f42" LastKnownName="MessageOccurrenceSpecification6" />
+              <messageOccurrenceSpecificationMoniker Id="038309b7-b6a8-4617-a2e9-46cf82dea368" LastKnownName="MessageOccurrenceSpecification7" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3a9a9bb5-7659-47a2-b722-36ff167e9df0" name="ExecutionOccurrenceSpecification3">
+            <elementDefinition Id="5c2a86d5-5b20-4955-8fa0-6285d0ab1162" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="060c105f-64e9-4741-ac91-57f3dd4d67fb" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="56c38558-f21f-4ecf-b44e-b1564058d569" name="MessageOccurrenceSpecification5">
+            <elementDefinition Id="147a13c1-4a3e-4898-9498-5613b82e676c" />
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4a8e6965-68e4-40af-ad18-9c9cd1a71f42" name="MessageOccurrenceSpecification6">
+            <elementDefinition Id="af80e1f7-997e-4dba-8f6c-b3f8d6aed315" />
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b4b93c28-2bff-4756-834f-c39936c40aa7" name="MessageOccurrenceSpecification8">
+            <elementDefinition Id="229529d4-ad34-4e6d-ba58-85256609bfd5" />
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="038309b7-b6a8-4617-a2e9-46cf82dea368" name="MessageOccurrenceSpecification7">
+            <elementDefinition Id="abfbb861-a5a7-40dd-88a7-6e65e0ea53c4" />
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="6d192ceb-6b24-4873-8c4a-4f9a9d3ea0b2" name="ExecutionOccurrenceSpecification4">
+            <elementDefinition Id="167b6a05-d7f5-4f10-ae9f-b6a9714ecb6d" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="c720dc1c-f0c7-498e-9c6f-8e887f90ba4e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9bf59629-0cb9-48a5-a203-311c6da6e974" name="BehaviorExecutionSpecification6">
+            <elementDefinition Id="3c0ef90b-ee84-4b23-88f8-88a7fb2bc499" />
+            <coveredLifelines>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="037016ea-5a8e-4bf6-9d80-b0dbc02da810" LastKnownName="ExecutionOccurrenceSpecification12" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="3211cdfa-957e-4ebc-a521-0172a56b92f1" LastKnownName="ExecutionOccurrenceSpecification11" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="571c4efb-0a58-48b0-bdec-21273de8ff62" LastKnownName="MessageOccurrenceSpecification22" />
+              <messageOccurrenceSpecificationMoniker Id="58860341-59d9-42a9-a18b-09cf3e9351b1" LastKnownName="MessageOccurrenceSpecification25" />
+              <messageOccurrenceSpecificationMoniker Id="193a2645-68c4-4b70-94c4-13a9d5c47265" LastKnownName="MessageOccurrenceSpecification28" />
+              <messageOccurrenceSpecificationMoniker Id="1733cf77-34d5-4e47-9c1d-1d8f8006535c" LastKnownName="MessageOccurrenceSpecification23" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="3211cdfa-957e-4ebc-a521-0172a56b92f1" name="ExecutionOccurrenceSpecification11">
+            <elementDefinition Id="03b3a078-6264-4bc0-bd49-243b700409b3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="cab13c6e-b3b0-4899-bfa2-e4183059dcb3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="571c4efb-0a58-48b0-bdec-21273de8ff62" name="MessageOccurrenceSpecification22">
+            <elementDefinition Id="cb77e5a9-4e7e-4f14-b5ec-7cf23b9fb228" />
+            <covered>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="92ecc824-4cc9-492a-b76a-67a1181ba2f1" name="MessageOccurrenceSpecification21">
+            <elementDefinition Id="3a81a339-022f-4b32-9c32-750430e131ab" />
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="a9800962-34d1-44e8-b6a9-e580c1f52646" name="BehaviorExecutionSpecification7">
+            <elementDefinition Id="8da71e26-774e-4268-bd10-d4ba5ac1fff5" />
+            <coveredLifelines>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="826ae312-febf-4274-8dba-496fe307d4c6" LastKnownName="ExecutionOccurrenceSpecification14" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f7d10305-efe2-4964-b72d-ca5ad185ca16" LastKnownName="ExecutionOccurrenceSpecification13" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="1f2020b7-ee07-49c5-94cf-6c7d17bf3389" LastKnownName="MessageOccurrenceSpecification26" />
+              <messageOccurrenceSpecificationMoniker Id="264da226-cf62-4982-bb97-cdd17563750d" LastKnownName="MessageOccurrenceSpecification27" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f7d10305-efe2-4964-b72d-ca5ad185ca16" name="ExecutionOccurrenceSpecification13">
+            <elementDefinition Id="b309c10a-99cf-4cf8-ad2e-d29036d3eae5" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="7bc1caac-ba3d-4772-b326-269a36902691" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1f2020b7-ee07-49c5-94cf-6c7d17bf3389" name="MessageOccurrenceSpecification26">
+            <elementDefinition Id="9b490bd3-5a87-4714-b385-b7ba0824affc" />
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="58860341-59d9-42a9-a18b-09cf3e9351b1" name="MessageOccurrenceSpecification25">
+            <elementDefinition Id="75096e5c-a78a-4642-9972-74598b7854f1" />
+            <covered>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="193a2645-68c4-4b70-94c4-13a9d5c47265" name="MessageOccurrenceSpecification28">
+            <elementDefinition Id="8e60f4a3-f0a2-4cb2-a54d-115be8a9f79a" />
+            <covered>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="264da226-cf62-4982-bb97-cdd17563750d" name="MessageOccurrenceSpecification27">
+            <elementDefinition Id="b4141aa0-f81f-4e8e-bf12-688a1992c355" />
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="826ae312-febf-4274-8dba-496fe307d4c6" name="ExecutionOccurrenceSpecification14">
+            <elementDefinition Id="fd53212c-2470-4f98-aca0-effa48d07459" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e41c127f-d009-479e-a79a-3f33c073abcb" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1733cf77-34d5-4e47-9c1d-1d8f8006535c" name="MessageOccurrenceSpecification23">
+            <elementDefinition Id="5cc7268f-c5dc-41ae-b5fb-3bdf25a91875" />
+            <covered>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="15589a5f-03b3-4852-b9d3-69c49f6851ed" name="MessageOccurrenceSpecification24">
+            <elementDefinition Id="92582676-2a62-4485-b597-9830f85d6699" />
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="037016ea-5a8e-4bf6-9d80-b0dbc02da810" name="ExecutionOccurrenceSpecification12">
+            <elementDefinition Id="b0aac3c9-a9c5-49b6-bd98-fbca4480b5be" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="65d274c4-0293-437d-a973-a8930f9e7956" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" LastKnownName=": Rating" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="2f2d15de-80f9-4de5-9c7f-bce220e60802" name="MessageOccurrenceSpecification4">
+            <elementDefinition Id="45b08a3a-f548-4852-b197-8c0ca5aab390" />
+            <covered>
+              <lifelineMoniker Id="c78b33a1-50ff-4e06-9bef-86e8cb01d3ac" LastKnownName="Bruger" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="167075be-873b-4b6b-815e-570dc24bacb9" name="MessageOccurrenceSpecification3">
+            <elementDefinition Id="3cc701e8-0840-4ada-b45c-79a347716f21" />
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c9ad4944-906b-434f-b061-db8d2e77ab05" name="ExecutionOccurrenceSpecification2">
+            <elementDefinition Id="198526e1-75f7-4af4-a5f2-ea5b7a32a175" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="39eb3677-5fc8-4a4e-a131-cfe2c03664c3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" LastKnownName=": HotelKatalog" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="2e7f3a44-7c0f-4634-8cad-4731973fe9d2" name="BehaviorExecutionSpecification3">
+            <elementDefinition Id="9c0e00b0-7abd-4c86-a18d-7a2ec7a13c55" />
+            <coveredLifelines>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c20b814a-2b09-4a90-a4ba-c1ee09317baf" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="e4459ba9-e2df-47c9-a70c-08ae6bcbeb26" LastKnownName="ExecutionOccurrenceSpecification5" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="cdae7923-5657-4f63-8b62-c0f0b3d93228" LastKnownName="MessageOccurrenceSpecification10" />
+              <messageOccurrenceSpecificationMoniker Id="47224884-b194-467e-99da-3f0ec086da78" LastKnownName="MessageOccurrenceSpecification11" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="e4459ba9-e2df-47c9-a70c-08ae6bcbeb26" name="ExecutionOccurrenceSpecification5">
+            <elementDefinition Id="1f4cfea9-abdd-4e51-a929-f7f5ecf49935" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="83b72fad-6725-4fb6-a9cc-9b83ab82c87e" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0d423a3e-79d5-4c01-8364-58aad3cad741" name="MessageOccurrenceSpecification9">
+            <elementDefinition Id="8d1f2300-1bad-4e7f-9dd9-f91b2cd9995e" />
+            <covered>
+              <lifelineMoniker Id="c78b33a1-50ff-4e06-9bef-86e8cb01d3ac" LastKnownName="Bruger" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="cdae7923-5657-4f63-8b62-c0f0b3d93228" name="MessageOccurrenceSpecification10">
+            <elementDefinition Id="5cd364f3-3ca4-48d0-90e6-c513a2bb1f66" />
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="47224884-b194-467e-99da-3f0ec086da78" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="52925a4b-2608-451f-bbb3-a538616e2a2c" />
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0f5be63c-05d1-45e2-b739-9ac632f750bf" name="MessageOccurrenceSpecification12">
+            <elementDefinition Id="ecb67ab5-edb0-4ce5-88e2-b81e46b5a56e" />
+            <covered>
+              <lifelineMoniker Id="c78b33a1-50ff-4e06-9bef-86e8cb01d3ac" LastKnownName="Bruger" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c20b814a-2b09-4a90-a4ba-c1ee09317baf" name="ExecutionOccurrenceSpecification6">
+            <elementDefinition Id="2d77f214-ba9a-4ace-beba-3dd12c40b8f5" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="97d5dab0-2a85-46f4-baaf-d44e33e35aae" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="46313455-ee07-438c-8936-3805ff55a62b" LastKnownName=": Hoteller &amp; Overnatning" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="c78b33a1-50ff-4e06-9bef-86e8cb01d3ac" name="Bruger" isActor="false" lifelineDisplayName="Bruger">
+            <elementDefinition Id="ca30f470-9d43-4860-a2fd-7d10de369df4" />
+            <represents>
+              <propertyMoniker Id="cb6ba06d-f42f-4a98-861c-c84cff400964" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="864b0241-24dc-4984-9900-294235e38c9a" LastKnownName="MessageOccurrenceSpecification1" />
+              <messageOccurrenceSpecificationMoniker Id="2f2d15de-80f9-4de5-9c7f-bce220e60802" LastKnownName="MessageOccurrenceSpecification4" />
+              <messageOccurrenceSpecificationMoniker Id="0d423a3e-79d5-4c01-8364-58aad3cad741" LastKnownName="MessageOccurrenceSpecification9" />
+              <messageOccurrenceSpecificationMoniker Id="0f5be63c-05d1-45e2-b739-9ac632f750bf" LastKnownName="MessageOccurrenceSpecification12" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="508d33fa-a55a-4b34-8295-53bbe61cf0fd" name=": HotelKatalog" isActor="false" lifelineDisplayName=": HotelKatalog">
+            <elementDefinition Id="a122dddb-561e-4169-af2e-0cb1b427ada5" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="b9510554-13f0-442a-8208-13ab35890926" LastKnownName="ExecutionOccurrenceSpecification1" />
+              <executionOccurrenceSpecificationMoniker Id="c9ad4944-906b-434f-b061-db8d2e77ab05" LastKnownName="ExecutionOccurrenceSpecification2" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="46313455-ee07-438c-8936-3805ff55a62b" name=": Hoteller &amp; Overnatning" isActor="false" lifelineDisplayName=": Hoteller &amp; Overnatning">
+            <elementDefinition Id="7c5031db-6e2f-4390-9dfa-80639edd778c" />
+            <represents>
+              <propertyMoniker Id="8823aacc-f0db-4ca5-af4b-c7b82a33e4ae" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="3a9a9bb5-7659-47a2-b722-36ff167e9df0" LastKnownName="ExecutionOccurrenceSpecification3" />
+              <executionOccurrenceSpecificationMoniker Id="6d192ceb-6b24-4873-8c4a-4f9a9d3ea0b2" LastKnownName="ExecutionOccurrenceSpecification4" />
+              <executionOccurrenceSpecificationMoniker Id="f7d10305-efe2-4964-b72d-ca5ad185ca16" LastKnownName="ExecutionOccurrenceSpecification13" />
+              <executionOccurrenceSpecificationMoniker Id="826ae312-febf-4274-8dba-496fe307d4c6" LastKnownName="ExecutionOccurrenceSpecification14" />
+              <executionOccurrenceSpecificationMoniker Id="e4459ba9-e2df-47c9-a70c-08ae6bcbeb26" LastKnownName="ExecutionOccurrenceSpecification5" />
+              <executionOccurrenceSpecificationMoniker Id="c20b814a-2b09-4a90-a4ba-c1ee09317baf" LastKnownName="ExecutionOccurrenceSpecification6" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="bafd9e92-ff6c-4112-85b5-9bddd2cd97ac" name=": Rating" isActor="false" lifelineDisplayName=": Rating">
+            <elementDefinition Id="12da058d-f8f5-4c3c-a1b6-8b10a9c71fa2" />
+            <represents>
+              <propertyMoniker Id="6416fddd-0352-4446-96e3-3274f5e96165" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="3211cdfa-957e-4ebc-a521-0172a56b92f1" LastKnownName="ExecutionOccurrenceSpecification11" />
+              <executionOccurrenceSpecificationMoniker Id="037016ea-5a8e-4bf6-9d80-b0dbc02da810" LastKnownName="ExecutionOccurrenceSpecification12" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="f5e1540c-d816-4041-9989-f4c327366e2a" name="VisHoteller()" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="dbe2beb5-4f98-4632-b22e-c69e96eccc96" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="864b0241-24dc-4984-9900-294235e38c9a" LastKnownName="MessageOccurrenceSpecification1" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="fe3efad3-181b-43f1-8686-df47e770b983" LastKnownName="MessageOccurrenceSpecification2" />
+            </receiveEvent>
+          </message>
+          <message Id="d142c7ce-7415-487e-abdd-d5f989f08fc3" name="HentAlleHoteller()" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="9f6fc707-8218-4978-b105-1d24299ed3f4" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="56c38558-f21f-4ecf-b44e-b1564058d569" LastKnownName="MessageOccurrenceSpecification5" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="4a8e6965-68e4-40af-ad18-9c9cd1a71f42" LastKnownName="MessageOccurrenceSpecification6" />
+            </receiveEvent>
+          </message>
+          <message Id="34e59e1b-5523-491a-9d54-5d636993a0d5" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="c12542a3-11f2-4500-9e58-b93b56e17f1f" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="038309b7-b6a8-4617-a2e9-46cf82dea368" LastKnownName="MessageOccurrenceSpecification7" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b4b93c28-2bff-4756-834f-c39936c40aa7" LastKnownName="MessageOccurrenceSpecification8" />
+            </receiveEvent>
+          </message>
+          <message Id="948afe7d-2c0a-4c96-94f9-5632665ac24f" name="HentBedoemmelse(int id)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="1fe72f27-3128-4cfe-91eb-4b711d44f448" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="92ecc824-4cc9-492a-b76a-67a1181ba2f1" LastKnownName="MessageOccurrenceSpecification21" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="571c4efb-0a58-48b0-bdec-21273de8ff62" LastKnownName="MessageOccurrenceSpecification22" />
+            </receiveEvent>
+          </message>
+          <message Id="cf79c102-6974-450e-b548-8a95f814c9ee" name="HentMiddelScore(int id)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="e838f11f-63ce-4107-b5c3-cdf5dacb9330" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="58860341-59d9-42a9-a18b-09cf3e9351b1" LastKnownName="MessageOccurrenceSpecification25" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="1f2020b7-ee07-49c5-94cf-6c7d17bf3389" LastKnownName="MessageOccurrenceSpecification26" />
+            </receiveEvent>
+          </message>
+          <message Id="8dfdad58-da70-449c-b778-17afc9892f76" name="&lt;&lt;MiddelScore&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="d11728ed-2bb1-4faa-9465-fc48efd668fc" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="264da226-cf62-4982-bb97-cdd17563750d" LastKnownName="MessageOccurrenceSpecification27" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="193a2645-68c4-4b70-94c4-13a9d5c47265" LastKnownName="MessageOccurrenceSpecification28" />
+            </receiveEvent>
+          </message>
+          <message Id="ffe2cff8-5f20-494b-9765-5edadb594993" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="e992d5bf-9f81-4339-ad2a-fd30b3fdabc9" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="1733cf77-34d5-4e47-9c1d-1d8f8006535c" LastKnownName="MessageOccurrenceSpecification23" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="15589a5f-03b3-4852-b9d3-69c49f6851ed" LastKnownName="MessageOccurrenceSpecification24" />
+            </receiveEvent>
+          </message>
+          <message Id="2b35e97c-7bbc-4463-b5d1-e94c0ad9e54d" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="191f22a5-7064-4c23-bef0-47c06f3bf4f9" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="167075be-873b-4b6b-815e-570dc24bacb9" LastKnownName="MessageOccurrenceSpecification3" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="2f2d15de-80f9-4de5-9c7f-bce220e60802" LastKnownName="MessageOccurrenceSpecification4" />
+            </receiveEvent>
+          </message>
+          <message Id="5c63e3ec-bbcf-4d96-aee0-182674fedb41" name="GivBedømmelse(int id, string navn, int score, string bedoemmelse)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="f51435de-d3b8-4073-8867-a248438bd041" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0d423a3e-79d5-4c01-8364-58aad3cad741" LastKnownName="MessageOccurrenceSpecification9" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="cdae7923-5657-4f63-8b62-c0f0b3d93228" LastKnownName="MessageOccurrenceSpecification10" />
+            </receiveEvent>
+          </message>
+          <message Id="013cf087-e9cd-40eb-b430-68f67bb873f8" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="1026e947-a205-4958-a276-133907704375" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="47224884-b194-467e-99da-3f0ec086da78" LastKnownName="MessageOccurrenceSpecification11" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="0f5be63c-05d1-45e2-b739-9ac632f750bf" LastKnownName="MessageOccurrenceSpecification12" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="cb6ba06d-f42f-4a98-861c-c84cff400964" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48bfa2b7-b7a8-4199-94a0-eb4f03d48213" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7ae390ee-4d86-4053-926a-a0b2cf94d317" LastKnownName="Bruger" />
+            </type_NamedElement>
+          </property>
+          <property Id="8823aacc-f0db-4ca5-af4b-c7b82a33e4ae" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f236d9f3-ee25-4c4b-b44f-98d1b665d9d3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c74062e-660f-42ef-bc97-e4e2ae8781f7" LastKnownName="Hoteller &amp; Overnatning" />
+            </type_NamedElement>
+          </property>
+          <property Id="6416fddd-0352-4446-96e3-3274f5e96165" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="40eebff4-aeee-41f8-8ebe-09a389d55a09" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8427aa7a-00bb-4a3d-b6e1-f5ea2b19d3c8" LastKnownName="Rating" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7ae390ee-4d86-4053-926a-a0b2cf94d317" name="Bruger" isAbstract="false" isLeaf="false" cachedFullName="UP Diagrammer::Bruger">
+        <elementDefinition Id="9f47cc1d-744b-45c4-b1b9-c5e7d1e13e85" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2c74062e-660f-42ef-bc97-e4e2ae8781f7" name="Hoteller &amp; Overnatning" isAbstract="false" isLeaf="false" cachedFullName="UP Diagrammer::Hoteller &amp; Overnatning">
+        <elementDefinition Id="db538cfc-613c-48c1-9199-d2c12f49defb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="952ca22f-6b82-4250-b976-3ec828c84a3d" name="ExecutionEvent">
+        <elementDefinition Id="a9b216c2-6c97-48e3-b309-87efbaacef74" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="39eb3677-5fc8-4a4e-a131-cfe2c03664c3" name="ExecutionEvent">
+        <elementDefinition Id="8b34ee3e-23a3-4816-a3bd-a67d37f90914" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="060c105f-64e9-4741-ac91-57f3dd4d67fb" name="ExecutionEvent">
+        <elementDefinition Id="e17acbb1-7148-43b9-87ab-266c10a3f8f2" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="c720dc1c-f0c7-498e-9c6f-8e887f90ba4e" name="ExecutionEvent">
+        <elementDefinition Id="4bf6b166-82bc-46b7-8b66-83782b3e3e6f" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="83b72fad-6725-4fb6-a9cc-9b83ab82c87e" name="ExecutionEvent">
+        <elementDefinition Id="d31b7a2d-d92f-47e6-974f-71520d348efb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="97d5dab0-2a85-46f4-baaf-d44e33e35aae" name="ExecutionEvent">
+        <elementDefinition Id="867fac07-b7c1-49a6-a46d-6443290f82cb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8427aa7a-00bb-4a3d-b6e1-f5ea2b19d3c8" name="Rating" isAbstract="false" isLeaf="false" cachedFullName="UP Diagrammer::Rating">
+        <elementDefinition Id="563dd5cc-8246-45dd-b5de-bfe97f1d3c7f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="cab13c6e-b3b0-4899-bfa2-e4183059dcb3" name="ExecutionEvent">
+        <elementDefinition Id="67ed3263-ce27-40ca-81bf-6e9df8981dcb" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="65d274c4-0293-437d-a973-a8930f9e7956" name="ExecutionEvent">
+        <elementDefinition Id="302d3c56-bdc1-466d-818c-6b40aa12a759" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="7bc1caac-ba3d-4772-b326-269a36902691" name="ExecutionEvent">
+        <elementDefinition Id="74d771c1-c339-4d49-9bbc-10ebf9b0f455" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e41c127f-d009-479e-a79a-3f33c073abcb" name="ExecutionEvent">
+        <elementDefinition Id="9c7944e1-ca05-4df7-901a-fb516a65215b" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="6825b5eb-b477-47dc-b0f1-649a7bee3ee9" name="UP Diagrammer">
+    <elementDefinition Id="925511a8-dd5f-444f-b896-baf2a9205a75" />
+  </package>
+</SequenceDesignerModel>

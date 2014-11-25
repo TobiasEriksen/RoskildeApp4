@@ -125,18 +125,9 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Bruger.cs" />
-    <Compile Include="Model\ButikKatalog.cs" />
-    <Compile Include="Model\HotelKatalog.cs" />
-    <Compile Include="Model\MainModel.cs" />
     <Compile Include="Model\Butikker.cs" />
     <Compile Include="Model\HotelOgOvernatning.cs" />
     <Compile Include="Model\Rating.cs" />
-    <Compile Include="Model\Sevaerdigheder.cs" />
-    <Compile Include="Model\SevaerdighedKatalog.cs" />
-    <Compile Include="Model\Spisesteder.cs" />
-    <Compile Include="Model\SpisestederKatalog.cs" />
-    <Compile Include="Model\StederBaseClass.cs" />
-    <Compile Include="ViewModel\ButikkerViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -152,16 +143,12 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Roskilde Turist v4_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\blue_background.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\magnifier.png" />
-    <Content Include="Assets\restaurantblack.png" />
-    <Content Include="Assets\restaurantgreen.png" />
-    <Content Include="Assets\restaurantred.png" />
-    <Content Include="Assets\restaurantwhite-eee.png" />
-    <Content Include="Assets\restaurantwhite.png" />
     <Content Include="Assets\shop.png" />
     <Content Include="Assets\shopgreen.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
@@ -174,9 +161,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Roskilde Turist v4_TemporaryKey.pfx" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

@@ -107,14 +107,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ViewHotelList.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ViewListControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -124,29 +116,11 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
-    <Compile Include="Model\Bruger.cs" />
-    <Compile Include="Model\ButikKatalog.cs" />
-    <Compile Include="Model\HotelKatalog.cs" />
     <Compile Include="Model\MainModel.cs" />
-    <Compile Include="Model\Butikker.cs" />
-    <Compile Include="Model\HotelOgOvernatning.cs" />
-    <Compile Include="Model\Rating.cs" />
-    <Compile Include="Model\Sevaerdigheder.cs" />
-    <Compile Include="Model\SevaerdighedKatalog.cs" />
-    <Compile Include="Model\Spisesteder.cs" />
-    <Compile Include="Model\SpisestederKatalog.cs" />
-    <Compile Include="Model\StederBaseClass.cs" />
-    <Compile Include="ViewModel\ButikkerViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\ViewHotelList.xaml.cs">
-      <DependentUpon>ViewHotelList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ViewListControl.xaml.cs">
-      <DependentUpon>ViewListControl.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -174,7 +148,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Roskilde Turist v4_TemporaryKey.pfx" />
   </ItemGroup>

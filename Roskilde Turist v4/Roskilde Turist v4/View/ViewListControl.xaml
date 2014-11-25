@@ -1,0 +1,41 @@
+﻿<UserControl
+    x:Class="Roskilde_Turist_v4.View.ViewListControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Roskilde_Turist_v4.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="250"
+    d:DesignWidth="250">
+
+    <Grid MaxHeight="250">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+            <StackPanel Margin="5" Grid.Row="1" Grid.Column="1">
+                <TextBlock FontSize="12">
+                        <Run Text="Rating: "/>
+                        <Run Text="8"/>
+                        <LineBreak/>
+                        <LineBreak/>
+                        <Run Text="Algade 81"/>
+                        <LineBreak/>
+                        <Run Text="Tlf: "/>
+                        <Run Text="22334455"/>
+                </TextBlock>
+            </StackPanel>
+        
+        <TextBlock VerticalAlignment="Center" Text="Hotel bla bla" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Row="1" Grid.Column="0"/>
+        
+    </Grid>
+</UserControl>

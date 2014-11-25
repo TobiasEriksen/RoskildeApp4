@@ -10,6 +10,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="25f4e4f7-8482-4273-aabb-508196d37df1" name="Kontakt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="3b4d71b8-9e03-44a9-af26-599a6c8fa2df" name="Lower" value="*">
+                      <elementDefinition Id="27937693-4c95-4709-90f0-96af242cf5fb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b0d11435-bcbb-487e-bc51-65337661d15f" name="Upper" value="*">
+                      <elementDefinition Id="707d548a-fb86-470f-b0e1-2ea9a3080c23" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="dfd6c1c1-8b39-469e-a8b9-f85b4d9634a2" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -55,11 +65,31 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="18377bed-6738-4515-a98b-8d8b379bf15d" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="c63cc693-172a-48bd-9f7f-a5bcb72bfb2c" name="Lower" value="*">
+                      <elementDefinition Id="efb4e82b-605d-4824-a2ca-941fc41d51c9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="95fb84dc-c37e-4f02-be88-b2f71a447d86" name="Upper" value="*">
+                      <elementDefinition Id="40665d51-4d4e-421f-9821-7db9d5b72cbd" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="6c770f2f-59f8-441c-b2da-7195c2e6f68b" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="20cd5c7b-9d15-4eb7-a25d-8f78e1625664" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="54c5fc7c-1ec7-4cd1-83fb-1d39e17a1a4d" name="Lower" value="*">
+                      <elementDefinition Id="e81cae6c-0e33-44a4-b09c-8f180f87e62d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="488b3b34-1429-4138-8480-224a764fe99c" name="Upper" value="*">
+                      <elementDefinition Id="bb7ff4ab-399c-46a5-8349-5fff3f5120ec" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="bc8f69ad-a9b7-4150-96e1-df13c80e9e51" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -71,11 +101,31 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="0e5a72f4-2317-4682-8106-a74a2123366e" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6127f1ab-330a-47fb-81b1-b59fdb876c61" name="Lower" value="*">
+                      <elementDefinition Id="a4fc44a6-f6f8-490f-96e9-141abec6515f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2464b7ee-b9f9-4edb-a3cb-969b627ffe19" name="Upper" value="*">
+                      <elementDefinition Id="d58ad7da-bbc7-49d8-9e8f-1c4a7be1ef77" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c452a70b-b762-484b-8bfd-634781e50fb6" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="afc1525c-2890-47ac-855d-1738af247612" name="Butikker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="9070c727-29c8-44f9-a643-1d476f9d478a" name="Lower" value="*">
+                      <elementDefinition Id="584415b1-e14e-4688-b66e-1daf4c6985b4" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="221ae27d-d879-4713-9e9a-693fb8178a2c" name="Upper" value="*">
+                      <elementDefinition Id="4be82114-9e82-40c7-bc77-3ddd4114f555" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c8e6ded4-8c49-43c9-a874-2c0578189196" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -87,11 +137,31 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="859fbe8c-1c5e-4ff5-9a48-b348840cd3c8" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="d57b5392-0ab8-4900-b276-3e58a7684e10" name="Lower" value="*">
+                      <elementDefinition Id="56a0d4fa-280b-4ae4-9324-910bd8b28a25" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="29c7c570-78dd-40d9-a97e-114668722264" name="Upper" value="*">
+                      <elementDefinition Id="6da0ab9e-ec74-490d-9e6f-c4fb0b1c7867" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="783bb8b6-1299-4842-9613-0bc003d71643" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="61060d9c-c440-4b5a-8f55-f9bd7ea7da02" name="Hoteller &amp; Overnatning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="8ac7900d-d683-4f03-8f2c-323aaf71b385" name="Lower" value="*">
+                      <elementDefinition Id="26817700-67d4-4815-933e-3f9d3dd31b8d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c9c9ef53-1f85-4785-992f-7813e0988c50" name="Upper" value="*">
+                      <elementDefinition Id="71fd4da9-ca49-4a3a-b137-92b915a7ac30" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="f6345c2b-c7b1-4d50-8b3d-4f45d9bf8058" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -103,11 +173,31 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="6d78e176-8f11-43ac-ab6b-865a17e0ed29" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="dcadcf2a-f848-4f94-accd-0d502cb324cf" name="Lower" value="*">
+                      <elementDefinition Id="9cff914f-009b-423c-b3d7-c1ddcf4cd7df" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2b1e6265-2aef-4903-9896-5717ff50e933" name="Upper" value="*">
+                      <elementDefinition Id="53997668-6ba7-4532-97d6-e750add3e2d6" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="3cef9c96-9012-423d-9994-8e6faed4acb8" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="e0346ec2-5085-4266-adf0-21c1fe99080a" name="Spisesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="923d06c9-2297-4674-974a-613593fe7f38" name="Lower" value="*">
+                      <elementDefinition Id="a95f699a-18de-4bfc-bfbb-5e58b5e1840b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ebffc23f-753e-43be-8731-738b45f668e8" name="Upper" value="*">
+                      <elementDefinition Id="b5b5db9e-35cb-44fa-9552-0195a2699e2e" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="1d1dea5c-24f8-40cf-bbde-813b01587dff" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -119,11 +209,31 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="d86ab0cf-cda8-4da6-a7ba-79a60a98cc3a" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="40821f35-d251-4f2b-bac3-09c77ec55e25" name="Lower" value="*">
+                      <elementDefinition Id="c78eca02-35a4-4593-8b23-ca80ae6024b1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="161c148e-1950-4edb-9162-77a13d6a109f" name="Upper" value="*">
+                      <elementDefinition Id="c6ec9815-7ef5-4db6-bbb2-66d9f4f7149f" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="d5dca7ef-9bbc-4af2-8e92-36b51268d59e" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="b9e24f1c-cd3b-4e2e-a07c-d08c3dac0f7b" name="Seværdigheder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="86fa6098-c7ec-4b95-8aeb-5611d49661e4" name="Lower" value="*">
+                      <elementDefinition Id="7b4f0ace-de3d-44e1-8c8a-795654c4f4b9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c0e4478e-4fce-42ba-a7e8-81d2f9dbe0ed" name="Upper" value="*">
+                      <elementDefinition Id="14177bd6-7c87-46cc-be95-98f02da079a4" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="055486e9-34dd-48a0-b01f-58ee16a68371" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -181,56 +291,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="5d6bfa58-aae6-4f09-a78a-7f1c662b1757" name="Bruger" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f0681ca1-832d-4eb7-b015-353d634dff28" />
-        <targetEnds>
-          <association Id="af238162-4a69-40c7-a4a8-0bd8569e17a4" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Spisesteder" isLeaf="false" isAbstract="false">
-            <classMoniker Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" LastKnownName="Spisesteder" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ea9dae28-eb59-42a9-b05a-1e2697b50fd6" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a1233358-e97c-4f8a-ae3e-d5538950f064" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ec6597be-2930-49b5-af88-8f1c1edcc4fa" name="Spisesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="aa2122a5-b9a8-420d-bd01-5f4572c926b1" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3b99f1e8-ec07-470c-b8d2-ae3d9b00c31b" />
-          </association>
-          <association Id="d906a707-867f-489a-abbb-60a2c21a95e8" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Hoteller &amp; Overnatning" isLeaf="false" isAbstract="false">
-            <classMoniker Id="28ced608-eded-4b39-a8a7-8a82284bac01" LastKnownName="Hoteller &amp; Overnatning" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="fc9798bd-f9db-4e68-adfe-c977fa3730a1" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="2b5ac95f-030d-4d70-8056-d786d7dba8b9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="7ff007d8-0ead-4216-821c-77fed8f47ddb" name="Hoteller &amp; Overnatning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1a6e8082-7e23-4556-8013-f4576dad53e8" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3a863e12-6c24-4276-846e-6ae1a8937e48" />
-          </association>
-          <association Id="2bfa38db-351d-422c-aa20-45895e3a3abc" isDerived="false" sourceEndRoleName="Bruger" targetEndRoleName="Besøgstæller" isLeaf="false" isAbstract="false">
-            <classMoniker Id="2364c27b-3bd8-47a4-8800-ec067dd5391a" LastKnownName="Besøgstæller" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d8d63ff0-a446-4b9f-9fd2-2b4e523862c8" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="1b1e0876-b391-4dd9-ad03-f811f76148d8" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="c72cd91a-e5f1-40e2-aefc-fa7f8ef01e3d" name="Besøgstæller" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="0d5d0f3d-ebba-4fb2-b2d9-9fd31a54f19f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b285af9e-e4cc-49ca-8610-eb204f9ebc01" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="c8719f46-6c65-4b22-8700-114cfca3b3a1" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="8fbd37cc-1fed-4e21-b5dc-0b1de4e0a752" />
@@ -300,23 +360,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="36bd9536-8c70-4b68-bb2e-339256024b92" name="Butikker" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6eae6595-4103-45ae-a1dc-22eba27fd287" />
-        <ownedAttributesInternal>
-          <property Id="4b346967-0ce0-4d44-ad74-90c908a00a0f" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="27db6291-f978-4060-9173-ae16dc7f283a" />
-          </property>
-          <property Id="c9a500bd-caaf-4a62-b661-032a47a6df26" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d051ef80-9055-49d8-9e1c-86e4ce820204" />
-          </property>
-          <property Id="3c6984d1-8ec8-4f8e-b11f-0e88664ee305" name="Aabningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6181e932-9927-4a84-9391-e6958d848a55" />
-          </property>
-          <property Id="cf5c4150-6fed-47bc-9c5c-b0472a67af5c" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c80beb08-6a0f-460f-b798-41fb24e935d8" />
-          </property>
-          <property Id="b3cd6adb-7827-400f-83e7-d854d3f1812c" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="26f7025f-252e-400d-a80f-a8d5a1a24dc2" />
-          </property>
-        </ownedAttributesInternal>
+        <generalsInternal>
+          <generalization Id="b94deb2a-0faf-4094-92c0-0b8a224e00dc" isSubstitutable="false">
+            <classMoniker Id="5b004ec1-17dd-43b0-b527-45a0c42aece7" LastKnownName="StederBaseClass" />
+            <elementDefinition Id="031331c9-9e46-46b6-bc83-dda7dae8f737" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation Id="38d491f6-b3d4-4b37-a3e6-07b7feb49a8b" name="visBedoemmelse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="a8bae194-a16d-4aaf-9b17-df024cb164fe" />
@@ -337,18 +386,15 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="28ced608-eded-4b39-a8a7-8a82284bac01" name="Hoteller &amp; Overnatning" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="20913147-88b3-410d-9622-3987161bbde7" />
+        <generalsInternal>
+          <generalization Id="0a8187b6-3428-4213-a55a-f5716f29a41b" isSubstitutable="false">
+            <classMoniker Id="5b004ec1-17dd-43b0-b527-45a0c42aece7" LastKnownName="StederBaseClass" />
+            <elementDefinition Id="e9090c97-4745-4b9d-b353-abfc76563302" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="ab8f5dd7-74d8-4610-9f86-9ad8a0fc1a37" name="Pladser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="5c88bfb0-f38d-4635-95b2-9e62974f55cf" />
-          </property>
-          <property Id="0b5684c3-eeab-46ce-ba8f-0477f111ba42" name="Aabningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3aa10823-4688-43b4-ba04-5d44508b9fcb" />
-          </property>
-          <property Id="51ec945d-eaf7-49ca-b929-54b08cd16245" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="fec946c5-5e5b-4a32-b701-d00c4efa7ef0" />
-          </property>
-          <property Id="fafc51e1-f545-4eb3-bfe1-8abc42993417" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d92a3447-d0a9-472c-85d7-a311c14332a0" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -371,24 +417,18 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="2bf13539-2c2d-480b-b0ea-eedb35b919cf" name="Spisesteder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6d2d5abe-bc4f-42da-89a9-35453c94050c" />
+        <generalsInternal>
+          <generalization Id="f596e690-857d-450e-bcb4-4440d8dcbebd" isSubstitutable="false">
+            <classMoniker Id="5b004ec1-17dd-43b0-b527-45a0c42aece7" LastKnownName="StederBaseClass" />
+            <elementDefinition Id="efeb0d6a-733c-445f-aa82-258bd2967e01" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="7f9884d8-ca38-497a-ab4e-c0b046b645d2" name="Menu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="3b47cdeb-1510-4a36-abd9-f61ab970f801" />
           </property>
           <property Id="26f44672-232b-4820-a1b1-1c01b5c4a7c1" name="Pladser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1dacd9a8-248a-4ae0-983d-b905498385ce" />
-          </property>
-          <property Id="5a1ae099-2a20-4f35-ab71-d3f9372f7683" name="Placeret på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f8cd957e-ec33-484c-9879-a9f64561930c" />
-          </property>
-          <property Id="88df76db-4e76-499a-9daa-615f1238bb4c" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="11275282-fa15-484b-bea8-bb2e18397247" />
-          </property>
-          <property Id="f1b9acda-6299-4c08-8022-df736b82146c" name="Aabningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4a7e046f-e068-4391-97b3-1b9f865691c6" />
-          </property>
-          <property Id="99dead56-e5db-4e15-bbb7-48ca2bd9d696" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5a378e33-c995-42b7-bc81-dc244aab2d65" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -438,6 +478,16 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="0805c199-488b-4808-bb99-4bc4016415ee" name="Spisesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="96ac66c4-7773-469b-9661-7a43990c5a9b" name="Lower" value="*">
+                      <elementDefinition Id="127f1fdd-0e12-43c3-a980-d72a8c797a56" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1afe0bd7-b6ff-49db-87af-43aaa49261aa" name="Upper" value="*">
+                      <elementDefinition Id="7b0dcd4e-83ee-47f5-881d-b938969c2c51" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="83ca0a3a-3bc6-4c25-b840-021907d01b8f" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -454,6 +504,16 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="a53797fc-dd61-4e37-b07b-fd0303127b38" name="Hoteller &amp; Overnatning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="70e113f4-878f-479c-b129-abe438ba077d" name="Lower" value="*">
+                      <elementDefinition Id="470156d7-5441-4c7c-88f0-6c1937f77f47" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="345f5aab-811d-4573-8610-cc9f879c3364" name="Upper" value="*">
+                      <elementDefinition Id="15fab921-5b20-49a6-8658-c9196e06cebe" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="102f418a-8285-4d10-9bb8-c9e9f3a317d5" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -470,6 +530,16 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="dca57de8-9682-4e00-9c35-8ff376440d19" name="Butikker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="d737b4cb-3c31-462d-add1-a764249fe8d8" name="Lower" value="*">
+                      <elementDefinition Id="3e431b27-55a9-4538-a56a-7786b148d41a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="914c42f0-9e4d-4b09-9e90-357c285c12a1" name="Upper" value="*">
+                      <elementDefinition Id="285ef069-1d47-4a29-b09f-3781c3355fb1" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="2b7b0491-509d-44ab-91fc-a13db53e647d" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -495,24 +565,15 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="8b5b316b-3a7b-4c5d-871b-6437cc931af9" name="Seværdigheder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1edbeb00-70c2-4816-9abf-d4e8989b571c" />
+        <generalsInternal>
+          <generalization Id="6c296e09-c5c2-4cce-839e-3f39a0f08b93" isSubstitutable="false">
+            <classMoniker Id="5b004ec1-17dd-43b0-b527-45a0c42aece7" LastKnownName="StederBaseClass" />
+            <elementDefinition Id="c15ad48f-e06d-46f9-8a91-37784a39b159" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="64f2b5a2-14fe-48cd-a1ad-04b3117ec7cb" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3dd490c0-6e0f-4fa1-b91d-e480735cc4ae" />
-          </property>
-          <property Id="6c035968-9502-472c-b561-7ebd273dea26" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8b7e585a-7371-4932-adbb-56a344322f9a" />
-          </property>
           <property Id="c5597fd0-782d-4bdb-85bb-c06716d27ba3" name="Tema" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="32ceec20-cfe7-4b7b-b993-4f5609e97caf" />
-          </property>
-          <property Id="44db9b90-dd1a-488f-9c21-fbadd41eb057" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ad954053-d603-4d80-9669-557a1900091c" />
-          </property>
-          <property Id="c44f9a30-5f3c-435f-9a4d-36ee95a5bb08" name="Aabningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8f83a6f4-4dcd-460d-a645-a7b6a908ab0f" />
-          </property>
-          <property Id="add8146b-e36d-4ccd-abbe-498558dd31bf" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6d55f234-805e-4127-9ab9-e1db4989c412" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -530,6 +591,31 @@
             <elementDefinition Id="d9ccc6f5-8e04-4e47-a25c-67b3f5826a91" />
           </operation>
         </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5b004ec1-17dd-43b0-b527-45a0c42aece7" name="StederBaseClass" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eaaa865e-22a6-466f-8f0b-c6760eefb725" />
+        <ownedAttributesInternal>
+          <property Id="955cc72f-c2af-4a5b-8be2-69c4b76cae53" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e92b951-1d8d-4803-93fe-40101c786d5f" />
+          </property>
+          <property Id="9fbee025-ff16-43c5-b6dd-4bb9ae43c3e0" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61b05aaa-d899-4d27-a681-7be3abaed9a6" />
+          </property>
+          <property Id="0a81a3eb-22a5-463e-a868-988e9eefc477" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c66df06-78cf-4c7e-8f08-3cf9dc8b5c2b" />
+          </property>
+          <property Id="06300c16-9fab-4d23-b5c9-520c09baf146" name="Tlf" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="748e6ae8-057b-4390-87b4-6830e4737048" />
+          </property>
+          <property Id="08307c36-e7a5-4a96-8b7f-1bc7dd8a6429" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f09b8f17-a72a-4380-90e3-e2c6c1aa8ba5" />
+          </property>
+          <property Id="bcb51b03-a51f-4f4b-a9d7-ca4f0a417ee7" name="Aabningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="355efe76-35f2-431d-b0b8-16aee9790c42" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

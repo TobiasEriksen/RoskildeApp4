@@ -1,4 +1,5 @@
-﻿using Roskilde_Turist_v4.Common;
+﻿using Windows.UI.Xaml.Media.Imaging;
+using Roskilde_Turist_v4.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -103,5 +104,20 @@ namespace Roskilde_Turist_v4.View
 
         #endregion
 
+        private void KnapLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBoxBrugernavn.Text == "" || TextBoxAdgangskode.Password == "")
+            {
+                MessageArea.Text = "Fejl: Du skal udfylde begge felter";
+            }
+            else
+            {
+                MessageArea.Text = "/Success i login eller oprettelse";
+                string brugernavn = TextBoxBrugernavn.Text;
+                string adgangskode = TextBoxAdgangskode.Password;
+            }
+        }
+
+        public BitmapImage imgSource { get; set; }
     }
 }

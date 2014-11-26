@@ -118,5 +118,10 @@ namespace Roskilde_Turist_v4
         {
             this.Frame.Navigate(typeof(ViewRoskildeTurist));
         }
+
+        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ViewLogIn));
+        }
     }
 }

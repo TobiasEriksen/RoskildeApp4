@@ -67,7 +67,7 @@
             </StackPanel>
         </Grid>
         <!-- Back button and page title -->
-        <Grid Opacity="0.7" Grid.Row="0" Background="Black">
+        <Grid Grid.Row="0" Background="#99000000">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>

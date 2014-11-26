@@ -35,7 +35,7 @@
         </Grid.RowDefinitions>
 
         <!-- Back button and page title -->
-        <Grid Background="Black">
+        <Grid Background="#99000000">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>

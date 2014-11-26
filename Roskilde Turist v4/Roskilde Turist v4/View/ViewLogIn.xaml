@@ -59,5 +59,14 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="396" Margin="153,75,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="394" Grid.ColumnSpan="2" Grid.Row="1" Background="#99000000">
+            <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" PlaceholderText="Brugernavn" Text="" VerticalAlignment="Top" Height="21" Width="350" Foreground="White"  Background="Gray" BorderThickness="0" Margin="0,100,0,0"/>
+            <TextBox TextWrapping="Wrap" PlaceholderText="Adgangskode" Foreground="White"  Background="Gray" BorderThickness="0" Margin="22,35,22,-1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="350"/>
+            <Button Content="Login" Foreground="White" Background="#FF0066FF" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="19,35,18,3" Width="356" BorderThickness="0"/>
+            <StackPanel HorizontalAlignment="Left" Height="5" Margin="281,0,0,0" Width="1"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="396" Margin="0,75,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="394" Grid.ColumnSpan="2" Grid.Row="1" Background="#99000000">
+            <StackPanel HorizontalAlignment="Left" Height="5" Margin="281,0,0,0" Width="1"/>
+        </StackPanel>
     </Grid>
 </Page>

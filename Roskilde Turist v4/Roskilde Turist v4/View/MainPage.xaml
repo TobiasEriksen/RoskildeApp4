@@ -15,9 +15,7 @@
         <x:String x:Key="AppName">visitRoskilde</x:String>
     </Page.Resources>
     <Page.BottomAppBar>
-        <AppBar>
-            <AppBarButton Icon="Home" Label="Roskilde Turist" HorizontalAlignment="Right" Click="AppBarButton_Click"/>
-        </AppBar>
+        <AppBar/>
     </Page.BottomAppBar>
 
     <!--

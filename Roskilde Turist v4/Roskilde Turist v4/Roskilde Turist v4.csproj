@@ -144,6 +144,8 @@
     <Compile Include="Model\Spisesteder.cs" />
     <Compile Include="Model\SpisestederKatalog.cs" />
     <Compile Include="Model\StederBaseClass.cs" />
+    <Compile Include="ViewModel\ButikkerViewModel.cs" />
+    <Compile Include="ViewModel\ButikListeViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -187,9 +189,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

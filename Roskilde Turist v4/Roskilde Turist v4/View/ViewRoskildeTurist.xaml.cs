@@ -15,14 +15,13 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
-using Roskilde_Turist_v4.View;
 
-namespace Roskilde_Turist_v4
+namespace Roskilde_Turist_v4.View
 {
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class ViewRoskildeTurist : Page
     {
 
         private NavigationHelper navigationHelper;
@@ -46,7 +45,7 @@ namespace Roskilde_Turist_v4
         }
 
 
-        public MainPage()
+        public ViewRoskildeTurist()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
@@ -103,25 +102,5 @@ namespace Roskilde_Turist_v4
         }
 
         #endregion
-
-        private void pageTitle_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof (ViewHotelList));
-        }
-
-        private void AppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ViewRoskildeTurist));
-        }
-
-        private void AppBarButton_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ViewLogIn));
-        }
     }
 }

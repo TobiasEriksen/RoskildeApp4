@@ -115,6 +115,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\ViewLogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ViewRoskildeTurist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -146,6 +154,12 @@
     </Compile>
     <Compile Include="View\ViewListControl.xaml.cs">
       <DependentUpon>ViewListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewLogIn.xaml.cs">
+      <DependentUpon>ViewLogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewRoskildeTurist.xaml.cs">
+      <DependentUpon>ViewRoskildeTurist.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

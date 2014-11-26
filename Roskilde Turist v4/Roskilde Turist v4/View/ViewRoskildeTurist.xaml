@@ -1,6 +1,6 @@
 ﻿<Page
     x:Name="pageRoot"
-    x:Class="Roskilde_Turist_v4.View.ViewHotelList"
+    x:Class="Roskilde_Turist_v4.View.ViewRoskildeTurist"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -12,7 +12,7 @@
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">Yo Yo</x:String>
+        <x:String x:Key="AppName">Roskilde Turistkontor</x:String>
     </Page.Resources>
 
     <!--
@@ -24,6 +24,13 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/blue_background.jpg"/>
         </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -31,43 +38,14 @@
         </Grid.ChildrenTransitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="140"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="190"/>
-                        <RowDefinition Height="190"/>
-                        <RowDefinition Height="190"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="260"/>
-                        <ColumnDefinition Width="260"/>
-                        <ColumnDefinition Width="260"/>
-                        <ColumnDefinition Width="260"/>
-                    </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                    <Button Grid.Column="1" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                    <Button Grid.Column="2" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                    <Button Grid.Column="3" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                </Grid>
-            </StackPanel>
-        </Grid>
+
         <!-- Back button and page title -->
-        <Grid Opacity="0.7" Grid.Row="0" Background="Black">
+        <Grid Grid.ColumnSpan="5" Background="#99000000">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
@@ -80,6 +58,7 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>

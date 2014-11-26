@@ -30,6 +30,9 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -45,7 +48,7 @@
         </Grid.RowDefinitions>
 
         <!-- Back button and page title -->
-        <Grid Grid.ColumnSpan="5" Background="#99000000">
+        <Grid Grid.ColumnSpan="8" Background="#99000000">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>

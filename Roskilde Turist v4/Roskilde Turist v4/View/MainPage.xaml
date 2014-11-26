@@ -15,7 +15,9 @@
         <x:String x:Key="AppName">visitRoskilde</x:String>
     </Page.Resources>
     <Page.BottomAppBar>
-        <AppBar/>
+        <AppBar>
+            <AppBarButton Icon="Home" Label="Roskilde Turist" HorizontalAlignment="Right" Click="AppBarButton_Click_2"/>
+        </AppBar>
     </Page.BottomAppBar>
 
     <!--
@@ -50,9 +52,9 @@
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" SelectionChanged="pageTitle_SelectionChanged" FontFamily="Kabel Bk BT"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Zoom" Label="Søg" Margin="1136,45,0,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="ContactInfo" Label="Login" Margin="1067,45,0,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT" Click="AppBarButton_Click_1"/>
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,0,40" SelectionChanged="pageTitle_SelectionChanged" FontFamily="Kabel Bk BT"/>
+            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Zoom" Label="Søg" Margin="1152,45,-6,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT"/>
+            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="ContactInfo" Label="Login" Margin="1064,46,0,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT" Click="AppBarButton_Click_1"/>
         </Grid>
         <Button HorizontalAlignment="Left" BorderThickness="0" Margin="120,100,0,0" Width="150" Grid.Row="1" Padding="0" VerticalAlignment="Top" Click="ButtonBase_OnClick">
             <Image Source="../Assets/shop.png" VerticalAlignment="Top" />

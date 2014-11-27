@@ -74,7 +74,7 @@
             <Image Source="ms-appx:///Assets/Roskilde_marie.jpg" Height="124" Margin="43,20,43,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#99343232" Margin="42,0,0,0">
-            <Image Source="ms-appx:///Assets/Roskilde_kort.PNG" Margin="0,25,-3,0"/>
+            <Image Source="ms-appx:///Assets/Roskilde_kort.PNG" Margin="0,25,0,0" Height="327" HorizontalAlignment="Right" Width="300"/>
         </StackPanel>
         <StackPanel Grid.Column="4" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="171" Grid.RowSpan="4" Background="#99343232">
             <TextBox TextWrapping="Wrap" Text="Ebbe Overgaard&#xD;&#xA;Turistkonsulent&#xD;&#xA;&#xD;&#xA;E-mail : ebbe@visitroskilde.dk" Height="126" Margin="-23,25,0,0" Foreground="White"  BorderThickness="0" Background="Transparent"/>

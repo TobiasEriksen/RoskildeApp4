@@ -134,14 +134,11 @@
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Bruger.cs" />
     <Compile Include="Model\Butikker.cs" />
-    <Compile Include="Model\HotelKatalog.cs" />
     <Compile Include="Model\HotelOgOvernatning.cs" />
     <Compile Include="Model\MainModel.cs" />
     <Compile Include="Model\Rating.cs" />
     <Compile Include="Model\Sevaerdigheder.cs" />
-    <Compile Include="Model\SevaerdighedKatalog.cs" />
     <Compile Include="Model\Spisesteder.cs" />
-    <Compile Include="Model\SpisestederKatalog.cs" />
     <Compile Include="Model\StederBaseClass.cs" />
     <Compile Include="ViewModel\ButikkerViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">

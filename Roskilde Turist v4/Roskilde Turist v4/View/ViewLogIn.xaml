@@ -61,8 +61,8 @@
         </Grid>
         <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="400" Margin="148,74,0,0" Grid.RowSpan="4" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="3" Grid.Row="1" Background="#99000000">
             <TextBlock x:Name="Login" TextWrapping="Wrap" Text="Login Her" Width="320" Margin="40,40,40,0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" Height="22"/>
-            <TextBox x:Name="TextBoxBrugernavn" TextWrapping="Wrap" PlaceholderText="Brugernavn" Text="" Height="40" Width="320" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-            <PasswordBox x:Name="TextBoxAdgangskode" PlaceholderText="Kode" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="320" Height="40" FontSize="16"/>
+            <TextBox x:Name="TextBoxBrugernavn" TextWrapping="Wrap" PlaceholderText="Brugernavn" Text="" Height="40" Width="320" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Padding="10,7,10,5"/>
+            <PasswordBox x:Name="TextBoxAdgangskode" PlaceholderText="Kode" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="320" Height="40" FontSize="16" Padding="10,7,10,5"/>
             <StackPanel Orientation="Vertical" Margin="40,40,0,-40">
                 <CheckBox Margin="0,0,0,-40" />
                 <TextBlock x:Name="TextBlockRememberMe" Width="60" Height="40" Canvas.ZIndex="-1" Margin="40,0,0,-40" HorizontalAlignment="Left" Text="Husk Mig" FontSize="14" LineHeight="6" TextAlignment="Center" Padding="0,10,0,0" />

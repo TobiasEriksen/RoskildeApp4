@@ -63,13 +63,13 @@
             <TextBlock x:Name="Login" TextWrapping="Wrap" Text="Login Her" Width="320" Margin="40,40,40,0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" Height="22"/>
             <TextBox x:Name="TextBoxBrugernavn" TextWrapping="Wrap" PlaceholderText="Brugernavn" Text="" Height="40" Background="White" BorderThickness="0" Margin="40,40,40,0" VerticalAlignment="Center" FontSize="16" Padding="10,7,10,5" Width="320"/>
             <PasswordBox x:Name="TextBoxAdgangskode" PlaceholderText="Kode" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="320" Height="40" FontSize="16" Padding="10,7,10,5"/>
-            <StackPanel Orientation="Vertical" Margin="40,40,40,-40">
+            <TextBlock x:Name="MessageArea" TextWrapping="Wrap" HorizontalAlignment="Center" Width="320" Height="35" Margin="40,0" FontSize="16" Padding="0,10,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="40,10,40,0">
                 <CheckBox Margin="0,0,0,-40" />
                 <TextBlock x:Name="TextBlockRememberMe" Width="60" Height="40" Canvas.ZIndex="-1" Margin="40,0,0,-40" HorizontalAlignment="Left" Text="Husk Mig" FontSize="14" LineHeight="6" TextAlignment="Center" Padding="0,11,0,0" />
                 <Button x:Name="KnapLogin" Content="Login" Foreground="White" Background="#FF0066FF" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" Width="200" BorderThickness="0" Height="40" Click="KnapLogin_Click"/>
             </StackPanel>
-            <TextBlock x:Name="MessageArea" TextWrapping="Wrap" HorizontalAlignment="Center" Width="320" Height="29" Margin="40,40,40,0" FontSize="16"/>
-            <StackPanel x:Name="GlemtLoginPanel" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="320" Margin="40,0,0,0">
+            <StackPanel x:Name="GlemtLoginPanel" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="320" Margin="40,35,0,0">
                 <TextBlock TextWrapping="Wrap" Text="Glemt dit login?" Width="130" Height="40" HorizontalAlignment="Left" FontSize="16" Padding="10,11,0,0"/>
                 <Button Content="Send kode" HorizontalAlignment="Right" VerticalAlignment="Top" Width="160" Height="40" BorderThickness="0" Margin="0,-40,0,0" Background="#FF0066FF"/>
             </StackPanel>
@@ -89,8 +89,8 @@
             	<LineBreak/>
             	<Run/>
             	<LineBreak/>
-            	<Run Text="D"/>
-            	<Run Text="u skriver blot dit ønskede brugernavn og password i feltet til højre og så checker vi om det er ledigt, hvis ikke kan du vælge et andet. dit brugernavn må gerne være med tal og bogstaver, uden mellemrum."/>
+            	<Run Text="Du "/>
+            	<Run Text="skriver blot dit ønskede brugernavn og password i feltet til højre og så checker vi om det er ledigt, hvis ikke kan du vælge et andet. dit brugernavn må gerne være med tal og bogstaver, uden mellemrum."/>
             </TextBlock>
         </StackPanel>
     </Grid>

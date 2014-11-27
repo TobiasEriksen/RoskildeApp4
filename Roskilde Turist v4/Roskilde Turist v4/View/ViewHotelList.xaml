@@ -8,11 +8,13 @@
     xmlns:common="using:Roskilde_Turist_v4.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:Roskilde_Turist_v4.ViewModel"
     mc:Ignorable="d">
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
         <x:String x:Key="AppName">visitRoskilde - Hoteller og overnatninger</x:String>
+        <viewModel:ButikkerViewModel x:Name="ButikkerViewModel"/>
     </Page.Resources>
 
     <!--
@@ -21,6 +23,9 @@
         * Row 1 contains the rest of the page layout
     -->
     <Grid>
+        <Grid.DataContext>
+            <viewModel:ButikkerViewModel/>
+        </Grid.DataContext>
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/blue_background.jpg"/>
         </Grid.Background>
@@ -39,31 +44,37 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="190"/>
-                        <RowDefinition Height="190"/>
-                        <RowDefinition Height="190"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="260"/>
-                        <ColumnDefinition Width="260"/>
-                        <ColumnDefinition Width="260"/>
-                        <ColumnDefinition Width="260"/>
-                    </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                    <Button Grid.Column="1" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                    <Button Grid.Column="2" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                    <Button Grid.Column="3" Grid.Row="0" BorderThickness="0">
-                        <local:ViewListControl/>
-                    </Button>
-                </Grid>
+<!--                <Grid>-->
+<!--                    <Grid.RowDefinitions>-->
+<!--                        <RowDefinition Height="190"/>-->
+<!--                        <RowDefinition Height="190"/>-->
+<!--                        <RowDefinition Height="190"/>-->
+<!--                    </Grid.RowDefinitions>-->
+<!--                    <Grid.ColumnDefinitions>-->
+<!--                        <ColumnDefinition Width="260"/>-->
+<!--                        <ColumnDefinition Width="260"/>-->
+<!--                        <ColumnDefinition Width="260"/>-->
+<!--                        <ColumnDefinition Width="260"/>-->
+<!--                    </Grid.ColumnDefinitions>-->
+<!--                    <Button Grid.Column="0" Grid.Row="0" BorderThickness="0">-->
+<!--                        <local:ViewListControl/>-->
+<!--                    </Button>-->
+<!--                    <Button Grid.Column="1" Grid.Row="0" BorderThickness="0">-->
+<!--                        <local:ViewListControl/>-->
+<!--                    </Button>-->
+<!--                    <Button Grid.Column="2" Grid.Row="0" BorderThickness="0">-->
+<!--                        <local:ViewListControl/>-->
+<!--                    </Button>-->
+<!--                    <Button Grid.Column="3" Grid.Row="0" BorderThickness="0">-->
+<!--                        <local:ViewListControl/>-->
+<!--                    </Button>-->
+<!--                </Grid>-->
+                <GridView DataContext="{StaticResource ButikkerViewModel}">
+                    <local:ViewListControl DataContext="{Binding ButikkerCollection[0]}"/>
+                    <local:ViewListControl DataContext="{Binding ButikkerCollection[1]}"/>
+                    <local:ViewListControl DataContext="{Binding ButikkerCollection[2]}"/>
+                    <local:ViewListControl DataContext="{Binding ButikkerCollection[3]}"/>
+                </GridView>
             </StackPanel>
         </Grid>
         <!-- Back button and page title -->

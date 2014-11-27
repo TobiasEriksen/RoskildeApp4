@@ -11,19 +11,30 @@ namespace Roskilde_Turist_v4.ViewModel
     class ButikkerViewModel
     {
         public static ObservableCollection<Butikker> ButikkerCollection { get; set; }
-        private static ButikKatalog _butikKatalog;
-        
-        public ButikkerViewModel(ButikKatalog butikKatalog)
+        public static List<Butikker> ButikKatalog;
+        public string[] _aabningstider = new string[] { "Mandag-Fredag: 10.00 - 18.00", "Lørdag: 10.00 - 18.00" };
+
+
+        public ButikkerViewModel()
         {
-            _butikKatalog = butikKatalog;
+            ButikKatalog = new List<Butikker>();
+            SetButik();
             ButikkerCollection = new ObservableCollection<Butikker>();
             UpdateListe();
         }
 
-        private void UpdateListe()
+        public void SetButik()
+        {
+            ButikKatalog.Add(new Butikker("Ro's Torv", "Elektronik", 1, "Fona", "22334455", _aabningstider));
+            ButikKatalog.Add(new Butikker("Ro's Torv", "Elektronik", 2, "GameStop", "22334455", _aabningstider));
+            ButikKatalog.Add(new Butikker("Algade 28", "Elektronik", 3, "3 Butik", "33333333", _aabningstider));
+            ButikKatalog.Add(new Butikker("Stationen", "Kiosk", 4, "7-Eleven", "07110711", _aabningstider));
+        }
+
+        public void UpdateListe()
         {
             var tempButikListe =
-                from butik in _butikKatalog.ButikkerListe
+                from butik in ButikKatalog
                 where butik.Test
                 select butik;
 

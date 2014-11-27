@@ -111,7 +111,7 @@ namespace Roskilde_Turist_v4
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof (ViewHotelList));
+            this.Frame.Navigate(typeof(ViewHotelList));
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)

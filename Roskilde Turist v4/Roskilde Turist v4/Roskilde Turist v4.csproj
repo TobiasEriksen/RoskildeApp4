@@ -133,7 +133,6 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Bruger.cs" />
-    <Compile Include="Model\ButikKatalog.cs" />
     <Compile Include="Model\Butikker.cs" />
     <Compile Include="Model\HotelKatalog.cs" />
     <Compile Include="Model\HotelOgOvernatning.cs" />
@@ -145,7 +144,6 @@
     <Compile Include="Model\SpisestederKatalog.cs" />
     <Compile Include="Model\StederBaseClass.cs" />
     <Compile Include="ViewModel\ButikkerViewModel.cs" />
-    <Compile Include="ViewModel\ButikListeViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

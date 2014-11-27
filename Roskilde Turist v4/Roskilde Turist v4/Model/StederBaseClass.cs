@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Roskilde_Turist_v4.Model
 {
-    class StederBaseClass
+    public class StederBaseClass
     {
         public string Adresse { get; set; }
         public string Kategori { get; set; }

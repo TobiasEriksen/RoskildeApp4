@@ -26,14 +26,14 @@
                         <Run Text="8"/>
                         <LineBreak/>
                         <LineBreak/>
-                        <Run Text="Algade 81"/>
+                        <Run Text="{Binding Adresse}"/>
                         <LineBreak/>
                         <Run Text="Tlf: "/>
-                        <Run Text="22334455"/>
+                        <Run Text="{Binding Tlf}"/>
                 </TextBlock>
             </StackPanel>
-        
-        <TextBlock VerticalAlignment="Center" Text="Hotel bla bla" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+        <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
 
         <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Row="1" Grid.Column="0"/>
         

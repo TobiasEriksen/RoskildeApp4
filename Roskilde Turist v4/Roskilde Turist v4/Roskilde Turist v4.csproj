@@ -170,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\blue_background.jpg" />
+    <Content Include="Assets\checkbox2.png" />
+    <Content Include="Assets\checkbox3.png" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\magnifier.png" />
     <Content Include="Assets\restaurantblack.png" />

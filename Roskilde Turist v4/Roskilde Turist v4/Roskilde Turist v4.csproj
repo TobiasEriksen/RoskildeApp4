@@ -175,6 +175,13 @@
     <Content Include="Assets\restaurantred.png" />
     <Content Include="Assets\restaurantwhite-eee.png" />
     <Content Include="Assets\restaurantwhite.png" />
+    <Content Include="Assets\Roskilde_ebbe.jpg" />
+    <Content Include="Assets\Roskilde_goOrange.gif" />
+    <Content Include="Assets\Roskilde_jette.jpg" />
+    <Content Include="Assets\Roskilde_kort.PNG" />
+    <Content Include="Assets\Roskilde_marie.jpg" />
+    <Content Include="Assets\Roskilde_mette.jpg" />
+    <Content Include="Assets\Roskilde_turist.jpg" />
     <Content Include="Assets\shop.png" />
     <Content Include="Assets\shopgreen.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />

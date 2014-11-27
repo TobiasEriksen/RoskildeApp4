@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
+using Roskilde_Turist_v4.Model;
 
 namespace Roskilde_Turist_v4.View
 {
@@ -117,7 +118,5 @@ namespace Roskilde_Turist_v4.View
                 string adgangskode = TextBoxAdgangskode.Password;
             }
         }
-
-        public BitmapImage imgSource { get; set; }
     }
 }

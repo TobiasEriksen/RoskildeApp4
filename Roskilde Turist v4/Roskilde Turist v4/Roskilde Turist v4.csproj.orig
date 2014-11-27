@@ -108,12 +108,20 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ViewHotelList.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\ViewListControl.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ViewLogIn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ViewRoskildeTurist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -125,10 +133,22 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Bruger.cs" />
-    <Compile Include="Model\MainModel.cs" />
+    <Compile Include="Model\ButikKatalog.cs" />
     <Compile Include="Model\Butikker.cs" />
+    <Compile Include="Model\HotelKatalog.cs" />
     <Compile Include="Model\HotelOgOvernatning.cs" />
+    <Compile Include="Model\MainModel.cs" />
     <Compile Include="Model\Rating.cs" />
+    <Compile Include="Model\Sevaerdigheder.cs" />
+    <Compile Include="Model\SevaerdighedKatalog.cs" />
+    <Compile Include="Model\Spisesteder.cs" />
+    <Compile Include="Model\SpisestederKatalog.cs" />
+    <Compile Include="Model\StederBaseClass.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="ViewModel\ButikkerViewModel.cs" />
+    <Compile Include="ViewModel\ButikListeViewModel.cs" />
+>>>>>>> d808956eee73c307ca816e45d65345fa1bc40070
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -138,6 +158,12 @@
     </Compile>
     <Compile Include="View\ViewListControl.xaml.cs">
       <DependentUpon>ViewListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewLogIn.xaml.cs">
+      <DependentUpon>ViewLogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewRoskildeTurist.xaml.cs">
+      <DependentUpon>ViewRoskildeTurist.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -166,12 +192,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Roskilde Turist v4_TemporaryKey.pfx" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

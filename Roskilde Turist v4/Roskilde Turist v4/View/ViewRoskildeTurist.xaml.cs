@@ -1,4 +1,5 @@
-﻿using Roskilde_Turist_v4.Common;
+﻿using Windows.System;
+using Roskilde_Turist_v4.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -80,27 +81,9 @@ namespace Roskilde_Turist_v4.View
         {
         }
 
-        #region NavigationHelper registration
-
-        /// The methods provided in this section are simply used to allow
-        /// NavigationHelper to respond to the page's navigation methods.
-        /// 
-        /// Page specific logic should be placed in event handlers for the  
-        /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
-        /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
-        /// The navigation parameter is available in the LoadState method 
-        /// in addition to page state preserved during an earlier session.
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            navigationHelper.OnNavigatedTo(e);
+            await Launcher.LaunchUriAsync(new Uri("http://www.facebook.com/visitroskilde"));
         }
-
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            navigationHelper.OnNavigatedFrom(e);
-        }
-
-        #endregion
     }
 }

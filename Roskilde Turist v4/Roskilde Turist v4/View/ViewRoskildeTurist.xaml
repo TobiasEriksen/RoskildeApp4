@@ -61,7 +61,27 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top"/>
+            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top" Click="AppBarButton_Click"/>
+            <Image Height="44" VerticalAlignment="Center" Width="45" Source="ms-appx:///Assets/Roskilde_goOrange.gif" Margin="1067,38,134,58" HorizontalAlignment="Center" Grid.Column="1"/>
         </Grid>
+        <StackPanel Grid.Column="5" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="341" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#E5343232">
+            <Image Source="ms-appx:///Assets/Roskilde_turist.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Height="171" Margin="0,25,0,0" Width="319"/>
+            <TextBox TextWrapping="Wrap" Text="Mød medarbejderne på Roskilde Turistbureau...&#xD;&#xA;&#xD;&#xA;Vores medarbejdere står klar til at hjælpe dig. Kontakt os per email, telefon, brev eller ved personligt fremmøde.&#xD;&#xA;&#xD;&#xA;Hovednummer : +45 4631 6565&#xD;&#xA;Adresse : Stændertorvet 1, 4000 Roskilde&#xD;&#xA;&#xD;&#xA;Åbningstider :&#xD;&#xA;mandag - fredag : 1000 - 1600&#xD;&#xA;lørdag : 1000 - 1300&#xD;&#xA;&#xD;&#xA;E-mail : info@visitroskilde.dk" Height="380" Background="#99343232" Foreground="White"   BorderThickness="0" FontSize="16" Margin="0,20,0,1" />
+        </StackPanel>
+        <StackPanel Grid.Column="3" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="171" Grid.RowSpan="4" Background="#99343232">
+            <Image Source="ms-appx:///Assets/Roskilde_ebbe.jpg" Height="124" Margin="0,25,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Image Source="ms-appx:///Assets/Roskilde_jette.jpg" Height="124" Margin="43,20,43,-2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Image Source="ms-appx:///Assets/Roskilde_mette.jpg" Height="124" Margin="43,20,43,-3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Image Source="ms-appx:///Assets/Roskilde_marie.jpg" Height="124" Margin="43,20,43,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#99343232" Margin="42,0,0,0">
+            <Image Source="ms-appx:///Assets/Roskilde_kort.PNG" Margin="0,25,0,0" Height="327" HorizontalAlignment="Right" Width="300"/>
+        </StackPanel>
+        <StackPanel Grid.Column="4" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="171" Grid.RowSpan="4" Background="#99343232">
+            <TextBox TextWrapping="Wrap" Text="Ebbe Overgaard&#xD;&#xA;Turistkonsulent&#xD;&#xA;&#xD;&#xA;E-mail : ebbe@visitroskilde.dk" Height="126" Margin="-23,25,0,0" Foreground="White"  BorderThickness="0" Background="Transparent"/>
+            <TextBox TextWrapping="Wrap" Text="Jette Funch&#xD;&#xA;Turistmedarbejder&#xD;&#xA;&#xD;&#xA;E-mail :&#xD;&#xA;jette@visitroskilde.dk" Height="123" Margin="-26,20,0,-2" Foreground="White" BorderThickness="0"  Background="Transparent"/>
+            <TextBox TextWrapping="Wrap" Text="Mette Holmgren&#xD;&#xA;Projektleder&#xD;&#xA;&#xD;&#xA;E-mal :&#xD;&#xA;mette@visitroskilde.dk" Height="123" Margin="-26,20,0,-1" HorizontalAlignment="Left" Width="197" Foreground="White" BorderThickness="0" Background="Transparent"/>
+            <TextBox TextWrapping="Wrap" Text="Marie Meldgaard&#xD;&#xA;Event- og&#xD;&#xA;marketingkoordinator&#xD;&#xA;&#xD;&#xA;E-mail :&#xD;&#xA;marie@visitroskilde.dk" Height="126" Margin="-26,20,0,0" Foreground="White" BorderThickness="0" Background="Transparent"/>
+        </StackPanel>
     </Grid>
 </Page>

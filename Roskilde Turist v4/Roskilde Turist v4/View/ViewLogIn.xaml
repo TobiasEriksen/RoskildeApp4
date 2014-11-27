@@ -59,20 +59,39 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="400" Margin="148,74,0,0" Grid.RowSpan="4" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="3" Grid.Row="1" Background="#99000000">
+        <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="400" Margin="148,74,0,0" Grid.RowSpan="4" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="3" Grid.Row="1" Background="#99000000" MaxHeight="400">
             <TextBlock x:Name="Login" TextWrapping="Wrap" Text="Login Her" Width="320" Margin="40,40,40,0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe UI" Height="22"/>
-            <TextBox x:Name="TextBoxBrugernavn" TextWrapping="Wrap" PlaceholderText="Brugernavn" Text="" Height="40" Width="320" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-            <PasswordBox x:Name="TextBoxAdgangskode" PlaceholderText="Kode" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="320" Height="40" FontSize="16"/>
-            <StackPanel Orientation="Vertical" Margin="40,40,0,-40">
+            <TextBox x:Name="TextBoxBrugernavn" TextWrapping="Wrap" PlaceholderText="Brugernavn" Text="" Height="40" Background="White" BorderThickness="0" Margin="40,40,40,0" VerticalAlignment="Center" FontSize="16" Padding="10,7,10,5" Width="320"/>
+            <PasswordBox x:Name="TextBoxAdgangskode" PlaceholderText="Kode" Background="White" BorderThickness="0" Margin="0,40,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="320" Height="40" FontSize="16" Padding="10,7,10,5"/>
+            <TextBlock x:Name="MessageArea" TextWrapping="Wrap" HorizontalAlignment="Center" Width="320" Height="35" Margin="40,0" FontSize="16" Padding="0,10,0,0"/>
+            <StackPanel Orientation="Vertical" Margin="40,10,40,0">
                 <CheckBox Margin="0,0,0,-40" />
-                <TextBlock x:Name="TextBlockRememberMe" Width="60" Height="40" Canvas.ZIndex="-1" Margin="40,0,0,-40" HorizontalAlignment="Left" Text="Husk Mig" FontSize="14" LineHeight="6" TextAlignment="Center" Padding="0,10,0,0" />
-                <Button x:Name="KnapLogin" Content="Login" Foreground="White" Background="#FF0066FF" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,40,0" Width="200" BorderThickness="0" Height="40" Click="KnapLogin_Click"/>
+                <TextBlock x:Name="TextBlockRememberMe" Width="60" Height="40" Canvas.ZIndex="-1" Margin="40,0,0,-40" HorizontalAlignment="Left" Text="Husk Mig" FontSize="14" LineHeight="6" TextAlignment="Center" Padding="0,11,0,0" />
+                <Button x:Name="KnapLogin" Content="Login" Foreground="White" Background="#FF0066FF" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0" Width="200" BorderThickness="0" Height="40" Click="KnapLogin_Click"/>
             </StackPanel>
-            <TextBlock x:Name="MessageArea" TextWrapping="Wrap" HorizontalAlignment="Center" Width="320" Height="29" Margin="40,40,40,0" FontSize="16"/>
+            <StackPanel x:Name="GlemtLoginPanel" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="320" Margin="40,35,0,0">
+                <TextBlock TextWrapping="Wrap" Text="Glemt dit login?" Width="130" Height="40" HorizontalAlignment="Left" FontSize="16" Padding="10,11,0,0"/>
+                <Button Content="Send kode" HorizontalAlignment="Right" VerticalAlignment="Top" Width="160" Height="40" BorderThickness="0" Margin="0,-40,0,0" Background="#FF0066FF"/>
+            </StackPanel>
         </StackPanel>
-        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="400" Margin="0,75,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2" Grid.Row="1" Background="#99000000">
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="400" Margin="0,75,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2" Grid.Row="1" Background="#99000000" MaxHeight="400">
             <StackPanel HorizontalAlignment="Left" Height="5" Margin="281,0,0,0" Width="1"/>
-            <TextBlock x:Name="FinBesked" TextWrapping="Wrap" Text="Her skriver vi en fin lille besked som folk bliver glade for at se." Width="320" Margin="40,40,40,0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="FinBesked" TextWrapping="Wrap" Width="320" Margin="40,40,40,0" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Height="310">
+            	<Run Text="Hvorfor skal jeg logge ind?"/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="For at give en bedømmelse i app'en skal du logge ind."/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="Hvad hvis jeg ikke har et? skal jeg udfylde en formular eller noget?"/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="Du "/>
+            	<Run Text="skriver blot dit ønskede brugernavn og password i feltet til højre og så checker vi om det er ledigt, hvis ikke kan du vælge et andet. dit brugernavn må gerne være med tal og bogstaver, uden mellemrum."/>
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Page>

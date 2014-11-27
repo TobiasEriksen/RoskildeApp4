@@ -63,5 +63,16 @@
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
             <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top"/>
         </Grid>
+        <StackPanel Grid.Column="5" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="341" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#E5343232">
+            <Image Height="221" Margin="10,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="321" Source="ms-appx:///Assets/Roskilde_turist.jpg"/>
+            <TextBox TextWrapping="Wrap" Text="Mød medarbejderne på Roskilde Turistbureau...&#xD;&#xA;&#xD;&#xA;Vores medarbejdere står klar til at hjælpe dig. Kontakt os per email, telefon, brev eller ved personligt fremmøde.&#xD;&#xA;&#xD;&#xA;Hovednummer : +45 4631 6565&#xD;&#xA;Adresse : Stændertorvet 1, 4000 Roskilde&#xD;&#xA;&#xD;&#xA;Åbningstider :&#xD;&#xA;mandag - fredag : 1000 - 1600&#xD;&#xA;lørdag : 1000 - 1300&#xD;&#xA;&#xD;&#xA;E-mail : info@visitroskilde.dk" Height="408" Background="#99343232" Foreground="White"   BorderThickness="0" FontSize="16" />
+        </StackPanel>
+        <StackPanel Grid.Column="3" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="342" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#99343232">
+            <Image Height="100" Margin="0,20,212,0" Source="ms-appx:///Assets/Roskilde_ebbe.jpg"/>
+            <Image Height="100" Margin="0,20,212,0" Source="ms-appx:///Assets/Roskilde_jette.jpg"/>
+            <Image Height="100" Margin="0,20,212,-1" Source="ms-appx:///Assets/Roskilde_mette.jpg"/>
+            <Image Height="100" Margin="0,20,212,0" Source="ms-appx:///Assets/Roskilde_marie.jpg"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="342" Grid.ColumnSpan="3" Grid.RowSpan="4" Background="#99343232" Margin="1,0,0,0"/>
     </Grid>
 </Page>

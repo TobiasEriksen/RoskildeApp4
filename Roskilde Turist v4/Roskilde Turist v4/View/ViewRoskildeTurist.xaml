@@ -61,11 +61,12 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top"/>
+            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top" Click="AppBarButton_Click"/>
+            <Image Height="44" VerticalAlignment="Center" Width="45" Source="ms-appx:///Assets/Roskilde_goOrange.gif" Margin="1067,38,134,58" HorizontalAlignment="Center" Grid.Column="1"/>
         </Grid>
         <StackPanel Grid.Column="5" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="341" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#E5343232">
-            <Image Height="221" Margin="10,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="321" Source="ms-appx:///Assets/Roskilde_turist.jpg"/>
-            <TextBox TextWrapping="Wrap" Text="Mød medarbejderne på Roskilde Turistbureau...&#xD;&#xA;&#xD;&#xA;Vores medarbejdere står klar til at hjælpe dig. Kontakt os per email, telefon, brev eller ved personligt fremmøde.&#xD;&#xA;&#xD;&#xA;Hovednummer : +45 4631 6565&#xD;&#xA;Adresse : Stændertorvet 1, 4000 Roskilde&#xD;&#xA;&#xD;&#xA;Åbningstider :&#xD;&#xA;mandag - fredag : 1000 - 1600&#xD;&#xA;lørdag : 1000 - 1300&#xD;&#xA;&#xD;&#xA;E-mail : info@visitroskilde.dk" Height="408" Background="#99343232" Foreground="White"   BorderThickness="0" FontSize="16" />
+            <Image Source="ms-appx:///Assets/Roskilde_turist.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Height="171" Margin="0,25,0,0" Width="319"/>
+            <TextBox TextWrapping="Wrap" Text="Mød medarbejderne på Roskilde Turistbureau...&#xD;&#xA;&#xD;&#xA;Vores medarbejdere står klar til at hjælpe dig. Kontakt os per email, telefon, brev eller ved personligt fremmøde.&#xD;&#xA;&#xD;&#xA;Hovednummer : +45 4631 6565&#xD;&#xA;Adresse : Stændertorvet 1, 4000 Roskilde&#xD;&#xA;&#xD;&#xA;Åbningstider :&#xD;&#xA;mandag - fredag : 1000 - 1600&#xD;&#xA;lørdag : 1000 - 1300&#xD;&#xA;&#xD;&#xA;E-mail : info@visitroskilde.dk" Height="380" Background="#99343232" Foreground="White"   BorderThickness="0" FontSize="16" Margin="0,20,0,1" />
         </StackPanel>
         <StackPanel Grid.Column="3" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="171" Grid.RowSpan="4" Background="#99343232">
             <Image Source="ms-appx:///Assets/Roskilde_ebbe.jpg" Height="124" Margin="0,25,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>

@@ -1,4 +1,5 @@
-﻿using Roskilde_Turist_v4.Common;
+﻿using Windows.System;
+using Roskilde_Turist_v4.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -78,6 +79,11 @@ namespace Roskilde_Turist_v4.View
         /// serializable state.</param>
         private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
+        }
+
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("http://www.facebook.com/visitroskilde"));
         }
     }
 }

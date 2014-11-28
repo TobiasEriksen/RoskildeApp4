@@ -69,12 +69,9 @@
 <!--                        <local:ViewListControl/>-->
 <!--                    </Button>-->
 <!--                </Grid>-->
-                <GridView DataContext="{StaticResource ButikkerViewModel}">
-                    <local:ViewListControl DataContext="{Binding ButikkerCollection[0]}"/>
-                    <local:ViewListControl DataContext="{Binding ButikkerCollection[1]}"/>
-                    <local:ViewListControl DataContext="{Binding ButikkerCollection[2]}"/>
-                    <local:ViewListControl DataContext="{Binding ButikkerCollection[3]}"/>
-                </GridView>
+
+                    <local:ViewListControl/>
+
             </StackPanel>
         </Grid>
         <!-- Back button and page title -->

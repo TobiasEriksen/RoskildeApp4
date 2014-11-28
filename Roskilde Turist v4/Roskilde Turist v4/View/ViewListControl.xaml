@@ -9,19 +9,21 @@
     d:DesignHeight="250"
     d:DesignWidth="250">
 
-    <Grid MaxHeight="250">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="110"/>
-            <ColumnDefinition Width="1*"/>
+    <UserControl.Resources>
+        <DataTemplate x:Key="ItemTemplate">
+            <Grid MaxHeight="250">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="1*"/>
 
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        
-            <StackPanel Margin="5" Grid.Row="1" Grid.Column="1">
-                <TextBlock FontSize="12">
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="5" Grid.Row="1" Grid.Column="1">
+                    <TextBlock FontSize="12" Width="150">
                         <Run Text="Rating: "/>
                         <Run Text="8"/>
                         <LineBreak/>
@@ -30,12 +32,25 @@
                         <LineBreak/>
                         <Run Text="Tlf: "/>
                         <Run Text="{Binding Tlf}"/>
-                </TextBlock>
-            </StackPanel>
+                        <LineBreak/>
+                        <LineBreak/>
+                        <Run Text="Kategori: "/>
+                        <Run Text="{Binding Kategori}"/>
+                    </TextBlock>
+                </StackPanel>
 
-        <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-        <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Row="1" Grid.Column="0"/>
-        
+                <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Row="1" Grid.Column="0"/>
+
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <GridView ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectionMode="None">
+
+        </GridView>
     </Grid>
+
 </UserControl>

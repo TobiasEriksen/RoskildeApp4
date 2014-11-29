@@ -21,7 +21,7 @@ namespace Roskilde_Turist_v4.View
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class ViewHotelList : Page
+    public sealed partial class ViewButikListe : Page
     {
 
         private NavigationHelper navigationHelper;
@@ -45,7 +45,7 @@ namespace Roskilde_Turist_v4.View
         }
 
 
-        public ViewHotelList()
+        public ViewButikListe()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);

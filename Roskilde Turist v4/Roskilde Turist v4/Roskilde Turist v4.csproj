@@ -107,9 +107,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ViewHotelList.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="View\ViewButikListe.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ViewHotelListe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ViewListControl.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -141,12 +145,16 @@
     <Compile Include="Model\Spisesteder.cs" />
     <Compile Include="Model\StederBaseClass.cs" />
     <Compile Include="ViewModel\ButikkerViewModel.cs" />
+    <Compile Include="ViewModel\OvernatningViewModel.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\ViewHotelList.xaml.cs">
-      <DependentUpon>ViewHotelList.xaml</DependentUpon>
+    <Compile Include="View\ViewButikListe.xaml.cs">
+      <DependentUpon>ViewButikListe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewHotelListe.xaml.cs">
+      <DependentUpon>ViewHotelListe.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ViewListControl.xaml.cs">
       <DependentUpon>ViewListControl.xaml</DependentUpon>

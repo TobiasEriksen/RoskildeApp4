@@ -7,41 +7,44 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="250"
-    d:DesignWidth="250">
+    d:DesignWidth="500">
 
     <UserControl.Resources>
         <DataTemplate x:Key="ItemTemplate">
             <Grid MaxHeight="250">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="110"/>
-                    <ColumnDefinition Width="1*"/>
-
-                </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
 
-                <StackPanel Margin="5" Grid.Row="1" Grid.Column="1">
-                    <TextBlock FontSize="12" Width="150">
-                        <Run Text="Rating: "/>
-                        <Run Text="8"/>
-                        <LineBreak/>
-                        <LineBreak/>
-                        <Run Text="{Binding Adresse}"/>
-                        <LineBreak/>
-                        <Run Text="Tlf: "/>
-                        <Run Text="{Binding Tlf}"/>
-                        <LineBreak/>
-                        <LineBreak/>
-                        <Run Text="Kategori: "/>
-                        <Run Text="{Binding Kategori}"/>
-                    </TextBlock>
-                </StackPanel>
+                    <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Column="0"/>
 
-                <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <StackPanel Margin="5" Grid.Column="1">
+                        <TextBlock FontSize="12" Width="250">
+                            <Run Text="Rating: "/>
+                            <Run Text="8"/>
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Run Text="{Binding Adresse}"/>
+                            <LineBreak/>
+                            <Run Text="Tlf: "/>
+                            <Run Text="{Binding Tlf}"/>
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Run Text="Kategori: "/>
+                            <Run Text="{Binding Kategori}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
 
-                <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Row="1" Grid.Column="0"/>
+                <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0"/>
+
+                
 
             </Grid>
         </DataTemplate>

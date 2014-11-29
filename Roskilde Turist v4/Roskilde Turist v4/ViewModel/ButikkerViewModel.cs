@@ -20,7 +20,7 @@ namespace Roskilde_Turist_v4.ViewModel
             Katalog = new List<Butikker>();
             SetButik();
             Collection = new ObservableCollection<Butikker>();
-            UpdateListe();
+            UpdateCollection();
         }
 
         public void SetButik()
@@ -34,7 +34,7 @@ namespace Roskilde_Turist_v4.ViewModel
 
         }
 
-        public void UpdateListe()
+        public void UpdateCollection()
         {
             var tempButikListe =
                 from butik in Katalog

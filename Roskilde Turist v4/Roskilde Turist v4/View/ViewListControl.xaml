@@ -51,8 +51,12 @@
     </UserControl.Resources>
 
     <Grid>
-        <GridView ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectionMode="None">
-
+        <GridView ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectionMode="None" IsItemClickEnabled="True">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Orientation="Vertical" Width="1300"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
         </GridView>
     </Grid>
 

@@ -19,10 +19,16 @@ namespace Roskilde_Turist_v4.ViewModel
         {
             Katalog = new List<HotelOgOvernatning>();
             SetHotel();
+
+            // Sorterer Kataloget i alfabetisk rækkefølge!!
+            Katalog.Sort((a,b) => a.Navn.CompareTo(b.Navn));
+
             Collection = new ObservableCollection<HotelOgOvernatning>();
             UpdateCollection();
         }
 
+        // Opretter objekter i en ObservableCollection der hedder Collection. 
+        // Pt kører den en test som er irrelevant da den tjekker en boolean som er sat til sand i constructor, hvilket resulterer i alle enheder bliver tilføjet
         private void UpdateCollection()
         {
             var tempListe =
@@ -32,9 +38,11 @@ namespace Roskilde_Turist_v4.ViewModel
 
             foreach (HotelOgOvernatning unit in tempListe)
                 Collection.Add(new HotelOgOvernatning(unit.Adresse, unit.Kategori, unit.Id, unit.Navn, unit.Tlf, unit.Aabningstider, unit.Pladser));
+
         }
 
 
+        // Tilføjer data til listen Katalog
         private void SetHotel()
         {
             Katalog.Add(new HotelOgOvernatning("Vindeboder 7", "Hotel", 1150, "Danhostel Roskilde", "46322184", _aabningstider, 40));

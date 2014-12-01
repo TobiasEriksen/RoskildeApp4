@@ -19,6 +19,10 @@ namespace Roskilde_Turist_v4.ViewModel
         {
             Katalog = new List<Butikker>();
             SetButik();
+
+            // Sorterer Kataloget i alfabetisk rækkefølge!!
+            Katalog.Sort((a, b) => a.Navn.CompareTo(b.Navn));
+
             Collection = new ObservableCollection<Butikker>();
             UpdateCollection();
         }

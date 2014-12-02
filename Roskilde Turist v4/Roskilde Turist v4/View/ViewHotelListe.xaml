@@ -14,7 +14,39 @@
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
         <x:String x:Key="AppName">visitRoskilde - Hotel og Overnatning</x:String>
-        <viewModel:OvernatningViewModel x:Name="OvernatningViewModel"/>
+        <DataTemplate x:Key="ItemTemplate">
+            <Grid MaxHeight="250" HorizontalAlignment="Left">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0"/>
+                <Grid Grid.Row="1" HorizontalAlignment="Left">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Column="0"/>
+                    <StackPanel Margin="5" Grid.Column="1">
+                        <TextBlock FontSize="12">
+                            <Run Text="Rating: "/>
+                            <Run Text="8"/>
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Run Text="{Binding Adresse}"/>
+                            <LineBreak/>
+                            <Run Text="Tlf: "/>
+                            <Run Text="{Binding Tlf}"/>
+                            <LineBreak/>
+                            <LineBreak/>
+                            <Run Text="Kategori: "/>
+                            <Run Text="{Binding Kategori}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </DataTemplate>
     </Page.Resources>
 
     <!--
@@ -42,12 +74,17 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions>
-            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
-                <local:ViewListControl/>
-
-            </StackPanel>
+            
+            <!--Kode til at lave lokalt indhold specifikt, den gør det samme som <local:view...> blot har disse 7 linjer brug for Datatemplate i PageResources-->
+<!--            <GridView Grid.Column="1" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectionMode="None" IsItemClickEnabled="True">-->
+<!--                <GridView.ItemsPanel>-->
+<!--                    <ItemsPanelTemplate>-->
+<!--                        <WrapGrid Orientation="Vertical" />-->
+<!--                    </ItemsPanelTemplate>-->
+<!--                </GridView.ItemsPanel>-->
+<!--            </GridView>-->
+            <local:ViewListControl Grid.Column="1"/>
         </Grid>
         <!-- Back button and page title -->
         <Grid Grid.Row="0" Background="#99000000">

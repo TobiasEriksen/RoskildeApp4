@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="925511a8-dd5f-444f-b896-baf2a9205a75"
   name="UP Diagrammer" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -27,20 +27,20 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="c58c85e5-9a17-4a59-9c15-dbbb06757127"
+            Id="4df64116-db3e-4baf-9f1c-2d50ace10cbf"
             isDerived="false"
             sourceEndRoleName="Kontakt"
-            targetEndRoleName="Bruger"
+            targetEndRoleName="visitRoskilde"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="9f47cc1d-744b-45c4-b1b9-c5e7d1e13e85"
-              LastKnownName="Bruger"
+              Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+              LastKnownName="visitRoskilde"
               LastKnownLocation="UP Diagrammer.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="f20508bf-9bf7-4407-9de1-ce69197cd9a8"
+                  Id="34794afc-83d2-4596-bc8a-2b3d4caeb073"
                   name="Kontakt"
                   isLeaf="false"
                   isStatic="false"
@@ -53,16 +53,15 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="2b2b4a90-739b-4016-9531-e56d4d40bfd1"
-                  name="Bruger"
+                  Id="b77729f4-f3ea-4a42-b8e0-773b5f53f428"
+                  name="visitRoskilde"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -143,7 +142,7 @@
             isAbstract="false">
             <classMoniker
               Id="9f47cc1d-744b-45c4-b1b9-c5e7d1e13e85"
-              LastKnownName="Bruger"
+              LastKnownName="Turist"
               LastKnownLocation="UP Diagrammer.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -163,126 +162,6 @@
                 <memberEnd
                   Id="ae0e4f77-41a7-4637-a147-7cce0b973a4a"
                   name="Bruger"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="e1385778-c9d5-42d0-abba-a90d65ebc335"
-            isDerived="false"
-            sourceEndRoleName="Rating"
-            targetEndRoleName="Butikker"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="9805b997-15e0-405e-affa-ba49daf13496"
-              LastKnownName="Butikker"
-              LastKnownLocation="UP Diagrammer.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="67d0febc-3221-4091-82be-478c2b60bdd5"
-                  name="Rating"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e14c3623-788c-41d5-8b15-a711fc0c5806"
-                  name="Butikker"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="f5f0573a-3467-4b42-a3b5-9ddd6ca4ff48"
-            isDerived="false"
-            sourceEndRoleName="Rating"
-            targetEndRoleName="Hoteller &amp; Overnatning"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="db538cfc-613c-48c1-9199-d2c12f49defb"
-              LastKnownName="Hoteller &amp; Overnatning"
-              LastKnownLocation="UP Diagrammer.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="73e9a104-5ce6-4aa8-bf36-d6999c4c47c5"
-                  name="Rating"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8e528cc0-169d-4ac0-8bcc-7fedac405884"
-                  name="Hoteller &amp; Overnatning"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="fad50506-17d7-4552-8042-b4ef5ef398ac"
-            isDerived="false"
-            sourceEndRoleName="Rating"
-            targetEndRoleName="Spisesteder"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ada2a263-aa45-4c34-882b-2705047faa74"
-              LastKnownName="Spisesteder"
-              LastKnownLocation="UP Diagrammer.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="cdbc2bef-346e-4689-88bd-407c4d384299"
-                  name="Rating"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9acb4c41-9710-4eb6-b63f-f6689e265e7e"
-                  name="Spisesteder"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -364,7 +243,7 @@
     <packageHasNamedElement>
       <class
         Id="9f47cc1d-744b-45c4-b1b9-c5e7d1e13e85"
-        name="Bruger"
+        name="Turist"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -410,21 +289,21 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="b2ac07ff-9d63-4672-a162-7b40e37e3716"
+            Id="bf4c23fe-34d5-44bf-9746-5800261cb00f"
             isDerived="false"
-            sourceEndRoleName="Bruger"
-            targetEndRoleName="Spisesteder"
+            sourceEndRoleName="Turist"
+            targetEndRoleName="visitRoskilde"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="ada2a263-aa45-4c34-882b-2705047faa74"
-              LastKnownName="Spisesteder"
+              Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+              LastKnownName="visitRoskilde"
               LastKnownLocation="UP Diagrammer.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="fd639c7f-6eae-4335-bb6e-de908486a971"
-                  name="Bruger"
+                  Id="0c62d16c-8fdc-495a-95ef-41368568dfaa"
+                  name="Turist"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -436,56 +315,15 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="3ce403bb-e7f2-4576-a5d2-0815354f1682"
-                  name="Spisesteder"
+                  Id="1e8fd623-6b1f-4645-8978-f7e6438b3991"
+                  name="visitRoskilde"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="f7f47894-febf-408b-8d87-5b597a678b6b"
-            isDerived="false"
-            sourceEndRoleName="Bruger"
-            targetEndRoleName="Hoteller &amp; Overnatning"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="db538cfc-613c-48c1-9199-d2c12f49defb"
-              LastKnownName="Hoteller &amp; Overnatning"
-              LastKnownLocation="UP Diagrammer.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="82268afe-2929-4789-aa60-91fda89d2e7b"
-                  name="Bruger"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="841a9bce-e9d0-4d1f-9f33-f53fe1c16521"
-                  name="Hoteller &amp; Overnatning"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -589,6 +427,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="44b37834-21ea-4c0b-a36b-9c1865d7ad85"
+            isDerived="false"
+            sourceEndRoleName="Butikker"
+            targetEndRoleName="visitRoskilde"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+              LastKnownName="visitRoskilde"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3bff6a2-2633-4a61-86e9-6907c126c09b"
+                  name="Butikker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be302e5b-7cd5-4a01-867b-ccd151f9f4b9"
+                  name="visitRoskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="8a1ade80-7cfd-474e-9c80-7b709107b9b7"
@@ -644,29 +523,48 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c01e48e9-2fec-4cc8-b185-f464c1a1fcf5"
+            isDerived="false"
+            sourceEndRoleName="Hoteller &amp; Overnatning"
+            targetEndRoleName="visitRoskilde"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+              LastKnownName="visitRoskilde"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95885750-bbd5-46f9-9165-52375cf481c1"
+                  name="Hoteller &amp; Overnatning"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c576246-0bc5-437f-9939-16f675fc3711"
+                  name="visitRoskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
-          <property
-            Id="c76a763e-3498-4ac6-a988-a20b3f376eb1"
-            name="Pladser"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="cac0a98f-2d90-4d9e-9777-89e2c24d7853"
-            name="Booking"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
           <property
             Id="2a296285-17dd-4772-9f87-8e7957c89741"
             name="Åbningstider"
@@ -699,32 +597,51 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3f4836bb-74d6-4915-ad2f-5e2b5b53f364"
+            isDerived="false"
+            sourceEndRoleName="Spisesteder"
+            targetEndRoleName="visitRoskilde"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+              LastKnownName="visitRoskilde"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eaaeba28-d604-4841-827c-5de2e639ac34"
+                  name="Spisesteder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6215dfa-fe84-4e93-b8ee-ede588d2fa08"
+                  name="visitRoskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="304e234a-9ab0-4a4c-906d-ea95509fae48"
             name="Menu"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="a7c8fe33-1c81-488b-a391-08c56fc65a0a"
-            name="Pladser"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="c980fd5e-0a58-4ba6-8acd-5ccf2e9484de"
-            name="Booking"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -784,6 +701,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f7c3afa6-ceb7-41bb-97a3-1bcbef041ce4"
+            isDerived="false"
+            sourceEndRoleName="Seværdigheder"
+            targetEndRoleName="visitRoskilde"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+              LastKnownName="visitRoskilde"
+              LastKnownLocation="UP Diagrammer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d230fe80-5f45-4610-ad82-8c40afdff7e2"
+                  name="Seværdigheder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72f2f399-861f-4181-9fe4-0399fab30dd3"
+                  name="visitRoskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="2ae2d3fc-8ae1-4ba2-8a3b-81d8f9da02c7"
@@ -3130,6 +3088,72 @@
           <property
             Id="355efe76-35f2-431d-b0b8-16aee9790c42"
             name="Aabningstider"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="53e158fc-f883-47b1-9ab8-0cc0211c2314"
+        name="visitRoskilde"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="388a4293-bcb5-41eb-93f3-179afaf147e8"
+            name="Adresse"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4f672a0d-cafa-403b-a262-f5430018fe2a"
+            name="Navn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="13e428ac-c2f0-4d3c-927e-8b71abb85eb6"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0219ed93-4811-4375-bac5-92d41342fdcb"
+            name="Telefon"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="73036744-5a80-4ef6-a4f7-20d0e8495dda"
+            name="Sociale Medier"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

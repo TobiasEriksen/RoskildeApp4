@@ -58,7 +58,7 @@
             <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="ContactInfo" Label="Login" Margin="1064,46,0,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT" Click="AppBarButton_Click_1"/>
         </Grid>
         
-<!--        Stackpanel der holder knapper og text-->
+        <!-- Stackpanel der holder knapper og text -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
             <StackPanel Margin="20,0">
                 <TextBlock Text="Butikker"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>

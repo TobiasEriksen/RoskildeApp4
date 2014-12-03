@@ -80,10 +80,21 @@ namespace Roskilde_Turist_v4.View
         private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
         }
-
-        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
+        
+        // Navigering for Sociale ikoner
+        private async void FacebookButton_OnClick(object sender, RoutedEventArgs e)
         {
             await Launcher.LaunchUriAsync(new Uri("http://www.facebook.com/visitroskilde"));
+        }
+
+        private async void YoutubeButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("https://www.youtube.com/channel/UC3Ov-5cvLRKPKdp4WmtnVIA"));
+        }
+
+        private async void InstagramButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("http://www.instagram.com/visitroskilde"));
         }
     }
 }

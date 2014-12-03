@@ -4,6 +4,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="9f396f7a-6233-42fe-95d3-4b164d4633d1" name="Visit Roskilde" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ead5e5b8-692f-4c7b-a955-bce3945bf837" />
+        <generalsInternal>
+          <generalization Id="54651209-36d0-41eb-a242-3f576a2b381c" isSubstitutable="false">
+            <classMoniker Id="5b004ec1-17dd-43b0-b527-45a0c42aece7" LastKnownName="Aktører" />
+            <elementDefinition Id="108b9656-d404-4bb3-b1d0-b76258ca226a" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation Id="eecddcc8-0e29-4eb2-8ed4-1194055f6d5a" name="indsaetData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e1584f67-d447-4eec-89b2-957c2726f053" />

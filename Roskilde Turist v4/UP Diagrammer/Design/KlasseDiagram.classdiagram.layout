@@ -106,5 +106,13 @@
         <classShapeMoniker Id="b7b9e546-e417-45ea-a02a-30ece7ade0e0" />
       </nodes>
     </generalizationConnector>
+    <generalizationConnector edgePoints="[(2.125 : 0.75); (2.125 : 0.26); (7.67124879884782 : 0.26); (7.67124879884782 : 0.5)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="54651209-36d0-41eb-a242-3f576a2b381c" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="cd3628a9-a206-405a-ab6f-708fd0a3e18c" />
+        <classShapeMoniker Id="b7b9e546-e417-45ea-a02a-30ece7ade0e0" />
+      </nodes>
+    </generalizationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

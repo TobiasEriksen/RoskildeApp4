@@ -1134,6 +1134,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="108b9656-d404-4bb3-b1d0-b76258ca226a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="eaaa865e-22a6-466f-8f0b-c6760eefb725"
+              LastKnownName="Aktører"
+              LastKnownLocation="UP Diagrammer.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation
             Id="e1584f67-d447-4eec-89b2-957c2726f053"

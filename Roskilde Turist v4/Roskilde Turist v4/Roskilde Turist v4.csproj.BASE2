@@ -103,10 +103,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Page Include="View\goFindView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,9 +146,6 @@
     <Compile Include="Model\StederBaseClass.cs" />
     <Compile Include="ViewModel\ButikkerViewModel.cs" />
     <Compile Include="ViewModel\OvernatningViewModel.cs" />
-    <Compile Include="View\goFindView.xaml.cs">
-      <DependentUpon>goFindView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -197,9 +190,6 @@
     <Content Include="Assets\shop.png" />
     <Content Include="Assets\shopgreen.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
-    <Content Include="Assets\Sociale Ikoner\facebook.png" />
-    <Content Include="Assets\Sociale Ikoner\instagram.png" />
-    <Content Include="Assets\Sociale Ikoner\youtube.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
   </ItemGroup>
@@ -209,18 +199,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup>
-<<<<<<< HEAD
-    <Folder Include="Assets\Actors\" />
-=======
-    <SDKReference Include="Bing.Maps.Xaml, Version=1.313.0825.0">
-      <Name>Bing Maps for C#, C++, or Visual Basic</Name>
-    </SDKReference>
-    <SDKReference Include="Microsoft.VCLibs, version=12.0">
-      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows</Name>
-    </SDKReference>
->>>>>>> e187a7fbd025d685dff6cc9d075a7425180fde9d
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

@@ -29,10 +29,5 @@ namespace Roskilde_Turist_v4.View
         {
             this.InitializeComponent();
         }
-
-        public async pushpintext()
-        {
-            
-        }
     }
 }

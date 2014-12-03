@@ -61,7 +61,7 @@
                     <bm:Location Latitude="55.645473" Longitude="12.084481" />
                 </bm:Map.Center>
                 <bm:Map.Children>
-                    <bm:Pushpin Name="PushpinA" Text="A" Tapped="pushpinTapped">
+                    <bm:Pushpin Name="PushpinA" Text="A">
                         <bm:MapLayer.Position>
                             <bm:Location Latitude="55.642644" Longitude="12.080385" />
                         </bm:MapLayer.Position>
@@ -73,7 +73,9 @@
                     </bm:Pushpin>
                 </bm:Map.Children>
             </bm:Map>
-            <TextBlock Name="TextBlockMaps" Width="500" Height="500">En masse tekst :-)</TextBlock>
+            <TextBlock x:Name="TextBlockMaps" Width="500" Height="500" Margin="0,39">
+            	<Run Text="En masse tekst :-)"/>
+            </TextBlock>
         </StackPanel>
     </Grid>
 </Page>

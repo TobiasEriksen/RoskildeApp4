@@ -135,5 +135,9 @@ namespace Roskilde_Turist_v4
         {
             this.Frame.Navigate(typeof (ViewHotelListe));
         }
+        private void ButtonClickgoFind(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(goFindView));
+        }
     }
 }

@@ -72,6 +72,12 @@
                     <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>
                 </Button>
             </StackPanel>
+            <StackPanel Margin="20,0,20,0">
+                <TextBlock Text="Spisesteder"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickgoFind">
+                    <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>
+                </Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

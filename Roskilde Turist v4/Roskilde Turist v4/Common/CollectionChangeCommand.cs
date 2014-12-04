@@ -12,6 +12,10 @@ namespace Roskilde_Turist_v4.Common
     {
         public bool CanExecute(object parameter)
         {
+            if (string.IsNullOrWhiteSpace((string) parameter))
+            {
+                return false;
+            }
             return true;
         }
 

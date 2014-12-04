@@ -197,9 +197,6 @@
     <Content Include="Assets\shop.png" />
     <Content Include="Assets\shopgreen.png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
-    <Content Include="Assets\Sociale Ikoner\facebook.png" />
-    <Content Include="Assets\Sociale Ikoner\instagram.png" />
-    <Content Include="Assets\Sociale Ikoner\youtube.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
   </ItemGroup>

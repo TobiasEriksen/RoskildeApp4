@@ -61,8 +61,16 @@
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Like" Label="Find os på Facebook" Margin="1115,25,0,0" VerticalAlignment="Top" Click="AppBarButton_Click"/>
-            <Image Height="44" VerticalAlignment="Center" Width="45" Source="ms-appx:///Assets/Roskilde_goOrange.gif" Margin="1067,38,134,58" HorizontalAlignment="Center" Grid.Column="1"/>
+            <!-- Sociale knapper, TopBar -->
+            <Button x:Name="InstagramButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1149,53,0,0" BorderThickness="0" Height="54" Width="59" Click="InstagramButton_OnClick">
+                <Image Source="../Assets/Sociale Ikoner/instagram.png" />
+            </Button>
+            <Button x:Name="YoutubeButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1115,53,0,0" BorderThickness="0" Height="54" Width="59" Click="YoutubeButton_OnClick">
+                <Image Source="../Assets/Sociale Ikoner/youtube.png" />
+            </Button>
+            <Button x:Name="FacebookButton" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1081,53,0,0" BorderThickness="0" Height="54" Width="59" Click="FacebookButton_OnClick">
+                <Image Source="../Assets/Sociale Ikoner/facebook.png" />
+            </Button>
         </Grid>
         <StackPanel Grid.Column="5" HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="341" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#E5343232">
             <Image Source="ms-appx:///Assets/Roskilde_turist.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Height="171" Margin="0,25,0,0" Width="319"/>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///F:/APPS/VISUAL STUDIO 2013 ULTIMATE/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="High" Text="Code generation or text transformation started." />
+  <Error Timestamp="2014-12-03T09:49:22" Importance="High" Text="No templates were found to process.  Configure templates by choosing 'Configure Default Code Generation Settings...' from the 'Architecture' menu, or change the selection for which code generation is launched." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="The selection included 23 elements which were not bound to a template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Besøgstæller' -  (Class): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Kontakt' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Rating' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Bruger' -  (Class): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Butikker' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'031331c9-9e46-46b6-bc83-dda7dae8f737' -  (Generalization): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Hoteller &amp; Overnatning' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Spisesteder' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'UP Diagrammer::' -  (Association): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Seværdigheder' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'e9090c97-4745-4b9d-b353-abfc76563302' -  (Generalization): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'efeb0d6a-733c-445f-aa82-258bd2967e01' -  (Generalization): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="Diagnostic" Text="'c15ad48f-e06d-46f9-8a91-37784a39b159' -  (Generalization): no bound template." />
+  <Warning Timestamp="2014-12-03T09:49:22" Importance="Medium" Text="'UP Diagrammer::Aktører' -  (Class): no bound template." />
+  <Message Timestamp="2014-12-03T09:49:22" Importance="High" Text="Code generation complete. Errors: 1. Warnings: 9." />
+</Log>

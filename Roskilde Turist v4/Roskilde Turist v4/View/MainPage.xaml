@@ -12,10 +12,10 @@
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">visitRoskilde</x:String>
+        <x:String x:Key="AppName">Visit Roskilde</x:String>
     </Page.Resources>
     <Page.BottomAppBar>
-        <AppBar>
+        <AppBar Background="#FFFF4D06">
             <AppBarButton Icon="Home" Label="Roskilde Turist" HorizontalAlignment="Right" Click="AppBarButton_Click_2"/>
         </AppBar>
     </Page.BottomAppBar>
@@ -25,10 +25,7 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Opacity="1.2">
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/blue_background.jpg"/>
-        </Grid.Background>
+    <Grid Opacity="1.2" Background="Azure">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -39,9 +36,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        
+
         <!-- Back button and page title -->
-        <Grid Background="#99000000">
+        <Grid Background="#FFFF4D06">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
@@ -57,7 +54,7 @@
             <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Zoom" Label="Søg" Margin="1152,45,-6,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT"/>
             <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="ContactInfo" Label="Login" Margin="1064,46,0,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT" Click="AppBarButton_Click_1"/>
         </Grid>
-        
+
         <!-- Stackpanel der holder knapper og text -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
             <StackPanel Margin="20,0">

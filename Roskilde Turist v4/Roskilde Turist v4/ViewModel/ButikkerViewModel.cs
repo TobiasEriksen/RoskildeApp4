@@ -6,13 +6,11 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using Roskilde_Turist_v4.Annotations;
-using System.Threading.Tasks;
 
 namespace Roskilde_Turist_v4.ViewModel
 {
     using Model;
-    class ButikkerViewModel : INotifyPropertyChanged
+    class ButikkerViewModel
     {
         public static ObservableCollection<Butikker> Collection { get; set; }
         public static List<Butikker> Katalog;
@@ -54,14 +52,5 @@ namespace Roskilde_Turist_v4.ViewModel
             
         }
 
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }

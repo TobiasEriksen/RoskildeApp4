@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
+using Roskilde_Turist_v4.Annotations;
 using System.Threading.Tasks;
 
 namespace Roskilde_Turist_v4.ViewModel
 {
     using Model;
-    class ButikkerViewModel
+    class ButikkerViewModel : INotifyPropertyChanged
     {
         public static ObservableCollection<Butikker> Collection { get; set; }
         public static List<Butikker> Katalog;
@@ -21,7 +25,7 @@ namespace Roskilde_Turist_v4.ViewModel
             SetButik();
 
             // Sorterer Kataloget i alfabetisk rækkefølge!!
-            Katalog.Sort((a, b) => a.Navn.CompareTo(b.Navn));
+            Katalog.Sort((a, b) => System.String.Compare(a.Navn, b.Navn, System.StringComparison.Ordinal));
 
             Collection = new ObservableCollection<Butikker>();
             UpdateCollection();
@@ -48,6 +52,22 @@ namespace Roskilde_Turist_v4.ViewModel
             foreach (Butikker butik in tempButikListe)
                 Collection.Add(new Butikker(butik.Adresse, butik.Kategori, butik.Id, butik.Navn, butik.Tlf, butik.Aabningstider));
             
+        }
+
+
+
+        
+
+
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

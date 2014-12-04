@@ -61,7 +61,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="85d76e9e-e0fc-4993-a076-496900694aac" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="85d76e9e-e0fc-4993-a076-496900694aac" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="1e8fd623-6b1f-4645-8978-f7e6438b3991" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -98,7 +98,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="5c1805a4-e6de-47f0-a185-fe7b4be472ca" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="5c1805a4-e6de-47f0-a185-fe7b4be472ca" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="be302e5b-7cd5-4a01-867b-ccd151f9f4b9" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -135,7 +135,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="e1f226f7-0da1-41f0-bbf3-69e1365226be" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="e1f226f7-0da1-41f0-bbf3-69e1365226be" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="7c576246-0bc5-437f-9939-16f675fc3711" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -166,7 +166,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2ed8a9f3-e87f-443c-a97c-819ad210086a" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="2ed8a9f3-e87f-443c-a97c-819ad210086a" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="a6215dfa-fe84-4e93-b8ee-ede588d2fa08" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -203,7 +203,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="ea6fbad0-0e72-4c8f-b5f3-20a4f71e61a0" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="ea6fbad0-0e72-4c8f-b5f3-20a4f71e61a0" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="72f2f399-861f-4181-9fe4-0399fab30dd3" />
                 </memberEnd>
               </associationHasOwnedEnds>

@@ -55,12 +55,6 @@ namespace Roskilde_Turist_v4.ViewModel
         }
 
 
-
-        
-
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]

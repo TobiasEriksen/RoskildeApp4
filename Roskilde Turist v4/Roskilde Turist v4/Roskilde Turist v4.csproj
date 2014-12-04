@@ -148,6 +148,7 @@
     <Compile Include="Model\Sevaerdigheder.cs" />
     <Compile Include="Model\Spisesteder.cs" />
     <Compile Include="Model\StederBaseClass.cs" />
+    <Compile Include="Properties\Annotations2.cs" />
     <Compile Include="ViewModel\ButikkerViewModel.cs" />
     <Compile Include="ViewModel\OvernatningViewModel.cs" />
     <Compile Include="View\goFindView.xaml.cs">

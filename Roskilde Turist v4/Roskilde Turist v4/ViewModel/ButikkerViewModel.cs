@@ -19,22 +19,24 @@ namespace Roskilde_Turist_v4.ViewModel
         public static List<Butikker> Katalog;
         private readonly string[] _aabningstider = { "Mandag-Fredag: 10.00 - 18.00", "Lørdag: 10.00 - 18.00" };
 
-        //lortet fungerer ikke. 
-        public ICommand SetElektronikCommand { get; private set; }
-        public ICommand SetAllCommand { get; private set; }
-        public ICommand SetToejCommand { get; private set; }
-        public ICommand SetKioskCommand { get; private set; }
+        //Test for dynamisk command
+        private ICommand _onCollectionChangeCommand;
+
+        public ICommand OnCollectionChangeCommand
+        {
+            get
+            {
+                return _onCollectionChangeCommand ?? 
+                    (_onCollectionChangeCommand = new CollectionChangeCommand());
+            }
+        }
 
         public ButikkerViewModel()
         {
             Katalog = new List<Butikker>();
             Collection = new ObservableCollection<Butikker>();
 
-            // commands
-            SetElektronikCommand = new RelayCommand(new Action(SetElektronik));
-            SetAllCommand = new RelayCommand(new Action(SetAll));
-            SetToejCommand = new RelayCommand(new Action(SetToej));
-            SetKioskCommand = new RelayCommand(new Action(SetKiosk));
+
             SetButik();
 
             // Sorterer Kataloget i alfabetisk rækkefølge!!
@@ -44,6 +46,10 @@ namespace Roskilde_Turist_v4.ViewModel
             UpdateCollection("all");
         }
 
+        public static void OnCollectionChange(object lang)
+        {
+            UpdateCollection(lang.ToString());
+        }
         public void SetButik()
         {
             Katalog.Add(new Butikker("Ro's Torv", "Elektronik", 1, "Fona", "22334455", _aabningstider));
@@ -52,31 +58,11 @@ namespace Roskilde_Turist_v4.ViewModel
             Katalog.Add(new Butikker("Stationen", "Kiosk", 4, "7-Eleven", "07110711", _aabningstider));
             Katalog.Add(new Butikker("Algade 36", "Tøj", 5, "Oda's Minde", "46351920", _aabningstider));
             Katalog.Add(new Butikker("Allehelgensgade 7 st", "Tøj", 6, "ID Lingeri", "46366301", _aabningstider));
-
         }
 
-        //Ligegyldig pt. indtil jeg får det fixet.
-        public void SetElektronik()
-        {
-            UpdateCollection("Elektronik");
-        }
 
-        public void SetAll()
-        {
-            UpdateCollection("all");
-        }
 
-        public void SetToej()
-        {
-            UpdateCollection("Tøj");
-        }
-
-        public void SetKiosk()
-        {
-            UpdateCollection("Kiosk");
-        }
-
-        public void UpdateCollection(string param)
+        public static void UpdateCollection(string param)
         {
             Collection.Clear();
             if (param == "all")

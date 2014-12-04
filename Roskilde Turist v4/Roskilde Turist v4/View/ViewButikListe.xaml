@@ -47,20 +47,17 @@
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-<!--            Stackpanel som viser knapper til at sortere listen-->
+            <!--            Stackpanel som viser knapper til at sortere listen-->
             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
                 <TextBlock Text="Sorter: " FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,20,0"/>
-                <Button BorderThickness="0" Content="Vis Alle" Command="{Binding SetAllCommand}"/>
-                <Button BorderThickness="0" Content="Elektronik" Command="{Binding SetElektronikCommand}"/>
-                <Button BorderThickness="0" Content="Kiosk" Command="{Binding SetKioskCommand}"/>
-                <Button BorderThickness="0" Content="Tøj" Command="{Binding SetToejCommand}"/>
+                <Button BorderThickness="0" Content="Vis Alle" Command="{Binding OnCollectionChangeCommand}" CommandParameter="all"/>
+                <Button x:Name="ElektronikButton" BorderThickness="0" Content="Elektronik" Command="{Binding OnCollectionChangeCommand}" CommandParameter="{Binding Content, ElementName=ElektronikButton}"/>
+                <Button x:Name="KioskButton" BorderThickness="0" Content="Kiosk" Command="{Binding OnCollectionChangeCommand, Mode=OneWay}" CommandParameter="{Binding Content, ElementName=KioskButton}"/>
+                <Button x:Name="ToejButton" BorderThickness="0" Content="Tøj" Command="{Binding OnCollectionChangeCommand, Mode=OneWay}" CommandParameter="{Binding Content, ElementName=ToejButton}"/>
             </StackPanel>
-            
-            <!--Stackpanel der viser min usercontrol -->
-            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left">
-                <local:ViewListControl/>
 
-            </StackPanel>
+            <!--Usercontrol der viser vores data-->
+            <local:ViewListControl Grid.Row="1" Grid.Column="1"/>
         </Grid>
         <!-- Back button and page title -->
         <Grid Grid.Row="0" Background="#99000000">

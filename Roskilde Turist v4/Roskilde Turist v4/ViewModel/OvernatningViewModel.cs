@@ -49,33 +49,6 @@ namespace Roskilde_Turist_v4.ViewModel
             Katalog.Add(new HotelOgOvernatning("Langagervej 19a", "B&B", 1170, "Bed & Breakfast Roskilde", "24469623", _aabningstider, 2));
             Katalog.Add(new HotelOgOvernatning("Vestre Kirkevej 12", "Hotel", 1151, "Comwell Roskilde", "46323131", _aabningstider, 50));
             Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
-            Katalog.Add(new HotelOgOvernatning("Algade 13", "Hotel", 1152, "Prindsen", "46309100", _aabningstider, 30));
         }
     }
 }

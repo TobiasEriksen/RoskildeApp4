@@ -21,14 +21,20 @@ namespace Roskilde_Turist_v4.ViewModel
 
         //lortet fungerer ikke. 
         public ICommand SetElektronikCommand { get; private set; }
+        public ICommand SetAllCommand { get; private set; }
+        public ICommand SetToejCommand { get; private set; }
+        public ICommand SetKioskCommand { get; private set; }
 
         public ButikkerViewModel()
         {
             Katalog = new List<Butikker>();
             Collection = new ObservableCollection<Butikker>();
 
-            // command der burde sætte selection til Elektronik
-            SetElektronikCommand = new RelayCommand(SetElektronik);
+            // commands
+            SetElektronikCommand = new RelayCommand(new Action(SetElektronik));
+            SetAllCommand = new RelayCommand(new Action(SetAll));
+            SetToejCommand = new RelayCommand(new Action(SetToej));
+            SetKioskCommand = new RelayCommand(new Action(SetKiosk));
             SetButik();
 
             // Sorterer Kataloget i alfabetisk rækkefølge!!
@@ -54,8 +60,25 @@ namespace Roskilde_Turist_v4.ViewModel
         {
             UpdateCollection("Elektronik");
         }
+
+        public void SetAll()
+        {
+            UpdateCollection("all");
+        }
+
+        public void SetToej()
+        {
+            UpdateCollection("Tøj");
+        }
+
+        public void SetKiosk()
+        {
+            UpdateCollection("Kiosk");
+        }
+
         public void UpdateCollection(string param)
         {
+            Collection.Clear();
             if (param == "all")
             {
                 var tempButikListe =

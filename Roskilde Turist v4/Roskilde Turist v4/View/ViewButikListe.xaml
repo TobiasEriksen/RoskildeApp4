@@ -49,7 +49,11 @@
             </Grid.RowDefinitions>
 <!--            Stackpanel som viser knapper til at sortere listen-->
             <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
-                <Button Content="Elektronik"/>
+                <TextBlock Text="Sorter liste efter: " FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,20,0"/>
+                <Button Content="Vis Alle" Command="{Binding SetAllCommand}"/>
+                <Button Content="Elektronik" Command="{Binding SetElektronikCommand}"/>
+                <Button Content="Kiosk" Command="{Binding SetKioskCommand}"/>
+                <Button Content="Tøj" Command="{Binding SetToejCommand}"/>
             </StackPanel>
             
             <!--Stackpanel der viser min usercontrol -->

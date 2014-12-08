@@ -67,7 +67,7 @@
             </Grid.ColumnDefinitions>
 
             <!-- Stackpanels med data til siden -->
-            <Grid Grid.Column="1" HorizontalAlignment="Center">
+            <Grid Grid.Column="1" HorizontalAlignment="Center" Background="#99343232">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -76,30 +76,31 @@
                 
 
                 <!-- Roskilde på kort -->
-                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="#99343232" Margin="42,0,0,0">
+                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="300" Margin="42,0,0,0">
                     <Image Source="ms-appx:///Assets/Roskilde_kort.PNG" Margin="0,25,0,0" Height="327" HorizontalAlignment="Right" Width="300"/>
                 </StackPanel>
+                
                 <!-- Medarbejderne -->
-                <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="171" Grid.RowSpan="4" Background="#99343232">
+                <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Margin="25">
                     <!-- Ebbe -->
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="ms-appx:///Assets/Roskilde_ebbe.jpg" Height="124" Margin="0,25,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBox TextWrapping="Wrap" Text="Ebbe Overgaard&#xD;&#xA;Turistkonsulent&#xD;&#xA;&#xD;&#xA;E-mail : ebbe@visitroskilde.dk" Height="126" Margin="-23,25,0,0" Foreground="White"  BorderThickness="0" Background="Transparent"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                        <Image Source="ms-appx:///Assets/Roskilde_ebbe.jpg" Height="124" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBox TextWrapping="Wrap" Text="Ebbe Overgaard&#xD;&#xA;Turistkonsulent&#xD;&#xA;&#xD;&#xA;E-mail : ebbe@visitroskilde.dk" Height="124" Foreground="White"  BorderThickness="0" Background="Transparent" Width="220"/>
                     </StackPanel>
                     <!-- Jette -->
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="ms-appx:///Assets/Roskilde_jette.jpg" Height="124" Margin="43,20,43,-2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBox TextWrapping="Wrap" Text="Jette Funch&#xD;&#xA;Turistmedarbejder&#xD;&#xA;&#xD;&#xA;E-mail :&#xD;&#xA;jette@visitroskilde.dk" Height="123" Margin="-26,20,0,-2" Foreground="White" BorderThickness="0"  Background="Transparent"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                        <Image Source="ms-appx:///Assets/Roskilde_jette.jpg" Height="124" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBox TextWrapping="Wrap" Text="Jette Funch&#xD;&#xA;Turistmedarbejder&#xD;&#xA;&#xD;&#xA;E-mail :&#xD;&#xA;jette@visitroskilde.dk" Height="124" Foreground="White" BorderThickness="0"  Background="Transparent" Width="220"/>
                     </StackPanel>
                     <!-- Mette -->
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="ms-appx:///Assets/Roskilde_mette.jpg" Height="124" Margin="43,20,43,-3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBox TextWrapping="Wrap" Text="Mette Holmgren&#xD;&#xA;Projektleder&#xD;&#xA;&#xD;&#xA;E-mal :&#xD;&#xA;mette@visitroskilde.dk" Height="123" Margin="-26,20,0,-1" HorizontalAlignment="Left" Width="197" Foreground="White" BorderThickness="0" Background="Transparent"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                        <Image Source="ms-appx:///Assets/Roskilde_mette.jpg" Height="124" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBox TextWrapping="Wrap" Text="Mette Holmgren&#xD;&#xA;Projektleder&#xD;&#xA;&#xD;&#xA;E-mal :&#xD;&#xA;mette@visitroskilde.dk" Height="124" HorizontalAlignment="Left" Width="220" Foreground="White" BorderThickness="0" Background="Transparent"/>
                     </StackPanel>
                     <!-- Marie -->
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="ms-appx:///Assets/Roskilde_marie.jpg" Height="124" Margin="43,20,43,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <TextBox TextWrapping="Wrap" Text="Marie Meldgaard&#xD;&#xA;Event- og&#xD;&#xA;marketingkoordinator&#xD;&#xA;&#xD;&#xA;E-mail :&#xD;&#xA;marie@visitroskilde.dk" Height="126" Margin="-26,20,0,0" Foreground="White" BorderThickness="0" Background="Transparent"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                        <Image Source="ms-appx:///Assets/Roskilde_marie.jpg" Height="124" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBox TextWrapping="Wrap" Text="Marie Meldgaard&#xD;&#xA;Event- og&#xD;&#xA;marketingkoordinator&#xD;&#xA;&#xD;&#xA;E-mail :&#xD;&#xA;marie@visitroskilde.dk" Height="124" Width="220" Foreground="White" BorderThickness="0" Background="Transparent"/>
                     </StackPanel>
                 </StackPanel>
 

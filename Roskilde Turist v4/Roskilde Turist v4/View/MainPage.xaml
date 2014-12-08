@@ -51,15 +51,19 @@
 				AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,0,40" SelectionChanged="pageTitle_SelectionChanged" FontFamily="Kabel Bk BT"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="Zoom" Label="Søg" Margin="1152,45,-6,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT"/>
-            <AppBarButton Grid.Column="1" HorizontalAlignment="Left" Icon="ContactInfo" Label="Login" Margin="1064,46,0,0" VerticalAlignment="Top" FontFamily="Kabel Bk BT" Click="AppBarButton_Click_1"/>
+            
+            <!-- Søg og login knapper -->
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <AppBarButton Icon="Zoom" Label="Søg" FontFamily="Kabel Bk BT"/>
+                <AppBarButton Icon="ContactInfo" Label="Login" FontFamily="Kabel Bk BT" Click="AppBarButton_Click_1"/>
+            </StackPanel>
         </Grid>
 
         <!-- Stackpanel der holder knapper og text -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
             <StackPanel Margin="20,0">
                 <Border CornerRadius="35" Background="#FFFF4D06"  BorderThickness="0">
-                    <TextBlock Text="Butikker" Margin="20,10"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text="Butikker" Margin="20,20" HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
                 </Border>
                 <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickButikker">
                     <Image Source="../Assets/shop.png" VerticalAlignment="Top"/>
@@ -67,7 +71,7 @@
             </StackPanel>
             <StackPanel Margin="20,0,20,0">
                 <Border CornerRadius="35" Background="#FFFF4D06"  BorderThickness="0">
-                    <TextBlock Margin="20,10" Text="Overnatning"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Margin="20,20" Text="Overnatning"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
                 </Border>
                 <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickOvernatning">
                     <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>
@@ -75,7 +79,7 @@
             </StackPanel>
             <StackPanel Margin="20,0,20,0">
                 <Border CornerRadius="35" Background="#FFFF4D06"  BorderThickness="0">
-                   <TextBlock Margin="20,10" Text="goFind"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                   <TextBlock Margin="20,20" Text="goFind"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
                 </Border>
                 <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickgoFind">
                     <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>

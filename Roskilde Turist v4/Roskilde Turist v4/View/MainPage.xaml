@@ -58,19 +58,25 @@
         <!-- Stackpanel der holder knapper og text -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
             <StackPanel Margin="20,0">
-                <TextBlock Text="Butikker"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                <Border CornerRadius="35" Background="#FFFF4D06"  BorderThickness="0">
+                    <TextBlock Text="Butikker" Margin="20,10"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                </Border>
                 <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickButikker">
                     <Image Source="../Assets/shop.png" VerticalAlignment="Top"/>
                 </Button>
             </StackPanel>
             <StackPanel Margin="20,0,20,0">
-                <TextBlock Text="Spisesteder"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
-                <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickSpisesteder">
+                <Border CornerRadius="35" Background="#FFFF4D06"  BorderThickness="0">
+                    <TextBlock Margin="20,10" Text="Overnatning"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                </Border>
+                <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickOvernatning">
                     <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>
                 </Button>
             </StackPanel>
             <StackPanel Margin="20,0,20,0">
-                <TextBlock Text="Spisesteder"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                <Border CornerRadius="35" Background="#FFFF4D06"  BorderThickness="0">
+                   <TextBlock Margin="20,10" Text="goFind"  HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+                </Border>
                 <Button HorizontalAlignment="Center" BorderThickness="0" Width="150" Margin="0,20,0,0" Padding="0" VerticalAlignment="Top" Click="ButtonClickgoFind">
                     <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>
                 </Button>

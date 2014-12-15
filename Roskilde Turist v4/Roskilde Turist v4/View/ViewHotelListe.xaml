@@ -54,13 +54,10 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid>
+    <Grid Background="White">
         <Grid.DataContext>
             <viewModel:OvernatningViewModel/>
         </Grid.DataContext>
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/blue_background.jpg"/>
-        </Grid.Background>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -75,19 +72,19 @@
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <!--Kode til at lave lokalt indhold specifikt, den gør det samme som <local:view...> blot har disse 7 linjer brug for Datatemplate i PageResources-->
-<!--            <GridView Grid.Column="1" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectionMode="None" IsItemClickEnabled="True">-->
-<!--                <GridView.ItemsPanel>-->
-<!--                    <ItemsPanelTemplate>-->
-<!--                        <WrapGrid Orientation="Vertical" />-->
-<!--                    </ItemsPanelTemplate>-->
-<!--                </GridView.ItemsPanel>-->
-<!--            </GridView>-->
+            <!--            <GridView Grid.Column="1" ItemTemplate="{StaticResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectionMode="None" IsItemClickEnabled="True">-->
+            <!--                <GridView.ItemsPanel>-->
+            <!--                    <ItemsPanelTemplate>-->
+            <!--                        <WrapGrid Orientation="Vertical" />-->
+            <!--                    </ItemsPanelTemplate>-->
+            <!--                </GridView.ItemsPanel>-->
+            <!--            </GridView>-->
             <local:ViewListControl Grid.Column="1"/>
         </Grid>
         <!-- Back button and page title -->
-        <Grid Grid.Row="0" Background="#99000000">
+        <Grid Grid.Row="0" Background="#FFFF4D06">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>

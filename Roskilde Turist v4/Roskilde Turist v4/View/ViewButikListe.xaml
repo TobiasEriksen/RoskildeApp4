@@ -22,13 +22,10 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid>
+    <Grid Background="White">
         <Grid.DataContext>
             <viewModel:ButikkerViewModel/>
         </Grid.DataContext>
-        <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/blue_background.jpg"/>
-        </Grid.Background>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -60,7 +57,7 @@
             <local:ViewListControl Grid.Row="1" Grid.Column="1"/>
         </Grid>
         <!-- Back button and page title -->
-        <Grid Grid.Row="0" Background="#99000000">
+        <Grid Grid.Row="0" Background="#FFFF4D06">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="*"/>

@@ -133,11 +133,7 @@ namespace Roskilde_Turist_v4
         //Linker pt til Hotellisten. 
         private void ButtonClickOvernatning(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof (ViewHotelListe));
-        }
-        private void ButtonClickgoFind(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(goFindView));
+            this.Frame.Navigate(typeof(ViewHotelListe));
         }
     }
 }

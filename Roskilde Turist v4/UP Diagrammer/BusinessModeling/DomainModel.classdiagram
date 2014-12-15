@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="12902a00-2d47-431e-b72e-993fbbc80b93" name="DomainModel" linkedPackageId="eba54f95-d0ad-4736-b41b-6504bbfa7be4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="12902a00-2d47-431e-b72e-993fbbc80b93" name="DomainModel" linkedPackageId="eba54f95-d0ad-4736-b41b-6504bbfa7be4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f35f0269-c48b-4db3-9fe6-d632fe041c32" name="Rating" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="f35f0269-c48b-4db3-9fe6-d632fe041c32" name="Rating-Sites" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="563dd5cc-8246-45dd-b5de-bfe97f1d3c7f" />
         <targetEnds>
           <association Id="cb982387-489c-417a-8040-d9fed6026a3d" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Bruger" isLeaf="false" isAbstract="false">
@@ -10,27 +10,67 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="bd9e7198-d3eb-48f4-905d-5d3ca57ad95f" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6ac1eff5-e58b-429a-9199-0e36020c7e8c" name="Lower" value="*">
+                      <elementDefinition Id="240d7e7e-9c44-4162-a867-76dad48faac5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="53034497-ab35-4af2-bc77-d8da73ebb755" name="Upper" value="*">
+                      <elementDefinition Id="f43da9c6-dd74-4157-a320-ded7c5f41da1" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="7274511d-592f-4608-94d9-e029ca6d1a4f" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="f35a5d26-8a6e-41d7-b88c-0a21fba8d742" name="Bruger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="fc6aefa3-1dd6-4d49-aaa9-4acd6b74c80b" name="Lower" value="*">
+                      <elementDefinition Id="57fd074a-bf8f-427b-900b-40853b112dc0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="291cb370-bba9-4407-a2b9-02cb9773fb34" name="Upper" value="*">
+                      <elementDefinition Id="c28808bd-3976-4f00-bea7-7d2afcc796ea" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="ae0e4f77-41a7-4637-a147-7cce0b973a4a" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="4d8c8bef-83d2-4883-b3ec-47f4f93ea512" />
           </association>
-          <association Id="0c84594a-beda-480a-ad8c-d2973bb14bb9" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Seværdigheder" isLeaf="false" isAbstract="false">
-            <classMoniker Id="ea0c8973-41d4-4a1f-8e28-96711e054816" LastKnownName="Seværdigheder" />
+          <association Id="0c84594a-beda-480a-ad8c-d2973bb14bb9" isDerived="false" sourceEndRoleName="Rating" targetEndRoleName="Aktør" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ea0c8973-41d4-4a1f-8e28-96711e054816" LastKnownName="Aktør" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="36055918-332e-4db5-a61c-662b76ddea91" name="Rating" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="8ec080d1-b156-48ae-ae45-b9818abe696f" name="Lower" value="*">
+                      <elementDefinition Id="93099408-8bba-4805-aa8a-29b3bf8519d6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8697f60f-4acb-4be9-b67e-5247cbca2b9d" name="Upper" value="*">
+                      <elementDefinition Id="17b96f04-6ea9-449e-a443-ffe3b9c8e10a" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="3951c3ee-dc27-436f-9e2b-c612dc83b62d" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="53f28053-9bab-4631-a77c-41b43c3fab8f" name="Seværdigheder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="53f28053-9bab-4631-a77c-41b43c3fab8f" name="Aktør" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="cae15d47-d905-4f08-b52b-9060bf21cfd3" name="Lower" value="*">
+                      <elementDefinition Id="108a11e4-6793-4150-87f8-161d8edbe1a1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7ea62fc0-9f1b-454c-bf20-bc28bc8051fc" name="Upper" value="*">
+                      <elementDefinition Id="31c6394e-009a-4bc3-bbab-900a4d7dcb62" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="f8a5304f-c302-455e-bbf8-acb245bf87f3" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -57,6 +97,16 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="5c7d652e-4fa6-4a4e-ba0e-c16c2300b6a7" name="Turist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="bc442e2a-f074-43c4-98a1-9345e56ce1fb" name="Lower" value="*">
+                      <elementDefinition Id="fe7c884a-52de-454f-831b-af419fed1749" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="cd97acc2-2f6e-4009-be2f-2ef537cc41a3" name="Upper" value="*">
+                      <elementDefinition Id="0dc19f75-5175-400c-a999-c165e99aa410" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="0c62d16c-8fdc-495a-95ef-41368568dfaa" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -79,126 +129,28 @@
           <property Id="437319e2-d29e-418d-87d2-ca6213a0722b" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="3e5dc401-b83a-4018-abd1-f281fdf6396d" />
           </property>
-          <property Id="06c29b2c-298d-45b7-8817-285b326e3c0d" name="Booking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c6ef37b7-8c6c-4496-9532-877fbc4cb0b0" />
-          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="a2c13464-46c2-49e0-b6fe-9a31f4a677d3" name="Butikker" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="9805b997-15e0-405e-affa-ba49daf13496" />
-        <targetEnds>
-          <association Id="c08ead17-3983-4708-a4c3-3ee7f73d0879" isDerived="false" sourceEndRoleName="Butikker" targetEndRoleName="visitRoskilde" isLeaf="false" isAbstract="false">
-            <classMoniker Id="ad46d0a7-e961-4446-a878-cb2dbd1a1b73" LastKnownName="visitRoskilde" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="86bb84de-a185-44f2-b569-6679d9cef8b3" name="Butikker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="f3bff6a2-2633-4a61-86e9-6907c126c09b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="5c1805a4-e6de-47f0-a185-fe7b4be472ca" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="be302e5b-7cd5-4a01-867b-ccd151f9f4b9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="44b37834-21ea-4c0b-a36b-9c1865d7ad85" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="09c568eb-d3a4-44e1-b5e6-b9a46c532457" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8a1ade80-7cfd-474e-9c80-7b709107b9b7" />
-          </property>
-          <property Id="c4d5ca26-abd7-4f9f-9bc4-4567f105de3b" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7e91ced1-51ad-457f-89f4-feb0d9253d8d" />
-          </property>
-          <property Id="6ff87d48-0ecb-4fd3-a31e-0992ae32ed57" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="eddc8768-f318-4c33-9e48-2b57b64578b0" />
-          </property>
-          <property Id="af7503d6-b4d7-4ad5-b271-1604979ee6bb" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="2eb62dff-6a21-4b21-8719-60f17700539d" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="2edf59e4-e9a9-426d-b6f1-0e5eb0dd581c" name="Hoteller &amp; Overnatning" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="db538cfc-613c-48c1-9199-d2c12f49defb" />
-        <targetEnds>
-          <association Id="88bddd15-b4aa-4748-ac4c-cb373efdfbf0" isDerived="false" sourceEndRoleName="Hoteller &amp; Overnatning" targetEndRoleName="visitRoskilde" isLeaf="false" isAbstract="false">
-            <classMoniker Id="ad46d0a7-e961-4446-a878-cb2dbd1a1b73" LastKnownName="visitRoskilde" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f4ea6bb6-c128-4e5a-88ba-53a14142aadd" name="Hoteller &amp; Overnatning" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="95885750-bbd5-46f9-9165-52375cf481c1" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e1f226f7-0da1-41f0-bbf3-69e1365226be" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="7c576246-0bc5-437f-9939-16f675fc3711" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="c01e48e9-2fec-4cc8-b185-f464c1a1fcf5" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="4145511a-0a42-4a37-8c80-613e96d05135" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="2a296285-17dd-4772-9f87-8e7957c89741" />
-          </property>
-          <property Id="4bf90487-4f98-40f0-959e-37cbc34ab307" name="Placering på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6d23e011-acd7-4810-8c14-b0ccf30f510b" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="71b138ea-c6ea-4cc6-9dbe-bbd922ac29ae" name="Spisesteder" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="ada2a263-aa45-4c34-882b-2705047faa74" />
-        <targetEnds>
-          <association Id="76f9b3a2-c187-4afa-96bc-84a5dadaaef4" isDerived="false" sourceEndRoleName="Spisesteder" targetEndRoleName="visitRoskilde" isLeaf="false" isAbstract="false">
-            <classMoniker Id="ad46d0a7-e961-4446-a878-cb2dbd1a1b73" LastKnownName="visitRoskilde" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="4149805c-d8d9-4359-9d68-149877a6fe29" name="Spisesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="eaaeba28-d604-4841-827c-5de2e639ac34" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2ed8a9f3-e87f-443c-a97c-819ad210086a" name="visitRoskilde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a6215dfa-fe84-4e93-b8ee-ede588d2fa08" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3f4836bb-74d6-4915-ad2f-5e2b5b53f364" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="6ba158f5-7a59-4e85-b641-fdcb15a4f6b6" name="Menu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="304e234a-9ab0-4a4c-906d-ea95509fae48" />
-          </property>
-          <property Id="0f68c59f-dc7f-46f0-8a12-104f601c4a64" name="Placeret på kort" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="98c69eb0-ed45-4497-85f0-292de2316926" />
-          </property>
-          <property Id="8307b2b3-c886-4d9c-a104-e7626caf129f" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="1e6391fb-dcb2-4bca-b948-709a59efbbf2" />
-          </property>
-          <property Id="1e0f563e-fd0b-427b-bb0e-2f21e4d966df" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cd1774f9-60dd-4c0c-97de-d3e3ceaf3c79" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="ea0c8973-41d4-4a1f-8e28-96711e054816" name="Seværdigheder" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ea0c8973-41d4-4a1f-8e28-96711e054816" name="Aktør" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="632c7fc9-f509-42ad-a42d-e0fba2df44ec" />
         <targetEnds>
-          <association Id="050aeb97-fc08-41d6-a285-6e3bd7241e8f" isDerived="false" sourceEndRoleName="Seværdigheder" targetEndRoleName="visitRoskilde" isLeaf="false" isAbstract="false">
+          <association Id="050aeb97-fc08-41d6-a285-6e3bd7241e8f" isDerived="false" sourceEndRoleName="Aktør" targetEndRoleName="visitRoskilde" isLeaf="false" isAbstract="false">
             <classMoniker Id="ad46d0a7-e961-4446-a878-cb2dbd1a1b73" LastKnownName="visitRoskilde" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c1b8a12c-e9b4-41cf-8ec7-0deeeafb98ad" name="Seværdigheder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="c1b8a12c-e9b4-41cf-8ec7-0deeeafb98ad" name="Aktør" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="343d22a9-7a90-43e3-a1c4-97c7bce3f21e" name="Lower" value="*">
+                      <elementDefinition Id="15fee2a6-b8d9-450e-ba8f-4bc0b2e95163" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a1090b5d-483c-43bc-b198-d888e683dc82" name="Upper" value="*">
+                      <elementDefinition Id="12b9ebef-15ff-4e09-a0fc-28789ab6a36b" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="d230fe80-5f45-4610-ad82-8c40afdff7e2" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -226,6 +178,12 @@
           </property>
           <property Id="fb7aa6e8-3790-4504-839d-06a4936de33a" name="Åbningstider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1ef58495-35a9-4006-b2cb-8552556348e7" />
+          </property>
+          <property Id="7bb94b01-fb01-4e50-b529-99ce54b4fb55" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d286af84-7941-4b8c-a839-9c65848d4eb7" />
+          </property>
+          <property Id="78299b53-f091-4a43-9242-a1e9cd86f9b1" name="Produkt" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3aecb815-c1e0-4c6a-a579-91d046935b4d" />
           </property>
         </ownedAttributesInternal>
       </class>

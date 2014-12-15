@@ -77,11 +77,8 @@
                     <Image Source="../Assets/restaurantgreen.png" VerticalAlignment="Top"/>
                 </Button>
             </StackPanel>
-<<<<<<< HEAD
             <StackPanel Margin="20,0,20,0">
             </StackPanel>
-=======
->>>>>>> parent of cc59b83... Noget kort noget
         </StackPanel>
     </Grid>
 </Page>

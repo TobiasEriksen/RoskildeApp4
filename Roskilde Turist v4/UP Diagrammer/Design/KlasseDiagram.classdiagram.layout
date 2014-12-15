@@ -66,7 +66,7 @@
         <classShapeMoniker Id="49a04075-3e77-420c-9a88-20c6b80e7d79" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(7.25 : 2.43716414647101); (7 : 2.43716414647101); (7 : 3.375); (2.5625 : 3.375); (2.5625 : 3.75)]" fixedFrom="Caller" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(8.578127 : 2.68359369536241); (8.578127 : 3.24609369536241); (7.92708333333333 : 3.24609369536241 : JumpStart); (7.76041666666667 : 3.24609369536241 : JumpEnd); (2.5625 : 3.24609369536241); (2.5625 : 3.75)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="a5cf1d66-8397-4ebf-8a42-dd2372a3fb1f" />
       <relativeChildShapes />
       <nodes>
@@ -74,7 +74,7 @@
         <classShapeMoniker Id="97790c96-4c56-4088-9543-781c1e9dfc69" />
       </nodes>
     </associationConnector>
-    <generalizationConnector edgePoints="[(10.5 : 1.7167968476812); (9.25 : 1.7167968476812)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(10.5 : 1.7167968476812); (9.25 : 1.7167968476812)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="266524a5-a135-4213-8a64-201c09850dc9" />
       <relativeChildShapes />
       <nodes>
@@ -82,7 +82,7 @@
         <classShapeMoniker Id="b7b9e546-e417-45ea-a02a-30ece7ade0e0" />
       </nodes>
     </generalizationConnector>
-    <generalizationConnector edgePoints="[(6.375 : 0.936876377887295); (7.25 : 0.936876377887295)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(6.375 : 0.936876377887295); (7.25 : 0.936876377887295)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="bc0a4443-c11f-4c6f-a906-fa4b5298464f" />
       <relativeChildShapes />
       <nodes>
@@ -90,7 +90,7 @@
         <classShapeMoniker Id="b7b9e546-e417-45ea-a02a-30ece7ade0e0" />
       </nodes>
     </generalizationConnector>
-    <generalizationConnector edgePoints="[(11.5434112035505 : 3.875); (11.5434112035505 : 3.5); (9.625 : 3.5); (9.625 : 2.37043312250845); (9.25 : 2.37043312250845)]" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(11.5434112035505 : 3.875); (11.5434112035505 : 3.5); (9.625 : 3.5); (9.625 : 2.37043312250845); (9.25 : 2.37043312250845)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="15eb1566-e10e-4cd4-bf88-79d5703f980d" />
       <relativeChildShapes />
       <nodes>
@@ -98,7 +98,7 @@
         <classShapeMoniker Id="b7b9e546-e417-45ea-a02a-30ece7ade0e0" />
       </nodes>
     </generalizationConnector>
-    <generalizationConnector edgePoints="[(8.87063480463262 : 4.125); (8.87063480463262 : 3.05859369536241); (8.86807064472612 : 3.05859369536241); (8.86807064472612 : 2.68359369536241)]" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(8.99281737634938 : 4.125); (8.99858510003831 : 2.68359369536241)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110">
       <generalizationMoniker Id="80af2b80-be60-4e45-8dcd-a557fd339f5a" />
       <relativeChildShapes />
       <nodes>
@@ -106,7 +106,7 @@
         <classShapeMoniker Id="b7b9e546-e417-45ea-a02a-30ece7ade0e0" />
       </nodes>
     </generalizationConnector>
-    <generalizationConnector edgePoints="[(2.125 : 0.75); (2.125 : 0.26); (7.67124879884782 : 0.26); (7.67124879884782 : 0.5)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(2.125 : 0.75); (2.125 : 0.26); (7.67124879884782 : 0.26); (7.67124879884782 : 0.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
       <generalizationMoniker Id="54651209-36d0-41eb-a242-3f576a2b381c" />
       <relativeChildShapes />
       <nodes>

@@ -54,7 +54,7 @@
             </StackPanel>
 
             <!--Usercontrol der viser vores data-->
-            <local:ViewListControl Grid.Row="1" Grid.Column="1"/>
+            <local:ViewListControl Background="#99323434" Opacity="0.6" Grid.Row="1" Grid.Column="1"/>
         </Grid>
         <!-- Back button and page title -->
         <Grid Grid.Row="0" Background="#FFFF4D06">

@@ -50,7 +50,6 @@ namespace Roskilde_Turist_v4.ViewModel
         {
             UpdateCollection(lang.ToString());
         }
-
         public void SetButik()
         {
             Katalog.Add(new Butikker("Ro's Torv", "Elektronik", 1, "Fona", "22334455", _aabningstider));
@@ -70,7 +69,7 @@ namespace Roskilde_Turist_v4.ViewModel
             {
                 var tempButikListe =
                 from butik in Katalog
-                where butik.Navn != null
+                where butik.Test
                 select butik;
 
                 foreach (Butikker butik in tempButikListe)

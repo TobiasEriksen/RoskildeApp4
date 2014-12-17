@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roskilde Turist v4", "Roskilde Turist v4\Roskilde Turist v4.csproj", "{48FC755B-433E-48B8-9348-CC73D81A608B}"
 EndProject
@@ -30,9 +30,9 @@ Global
 		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x64.ActiveCfg = Debug|x64
 		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x64.Build.0 = Debug|x64
 		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x64.Deploy.0 = Debug|x64
-		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x86.ActiveCfg = Debug|x64
-		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x86.Build.0 = Debug|x64
-		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x86.Deploy.0 = Debug|x64
+		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x86.ActiveCfg = Debug|x86
+		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x86.Build.0 = Debug|x86
+		{48FC755B-433E-48B8-9348-CC73D81A608B}.Debug|x86.Deploy.0 = Debug|x86
 		{48FC755B-433E-48B8-9348-CC73D81A608B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48FC755B-433E-48B8-9348-CC73D81A608B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48FC755B-433E-48B8-9348-CC73D81A608B}.Release|Any CPU.Deploy.0 = Release|Any CPU

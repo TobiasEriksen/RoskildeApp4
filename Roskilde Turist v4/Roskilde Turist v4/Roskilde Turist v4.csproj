@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\blue_background.jpg" />
+    <Content Include="Assets\Fona.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />
     <Content Include="Assets\magnifier.png" />
     <Content Include="Assets\restaurantblack.png" />

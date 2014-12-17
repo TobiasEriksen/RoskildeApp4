@@ -6,46 +6,19 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="250"
-    d:DesignWidth="500">
+    d:DesignHeight="200"
+    d:DesignWidth="200">
 
     <UserControl.Resources>
         <DataTemplate x:Key="ItemTemplate">
-            <Grid MaxHeight="250">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="110"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image VerticalAlignment="Top" Width="100" Height="100" Margin="5" Source="ms-appx:///Assets/shopgreen.png" Grid.Column="0"/>
-
-                    <StackPanel Margin="5" Grid.Column="1">
-                        <TextBlock FontSize="12" Width="250">
-                            <Run Text="Rating: "/>
-                            <Run Text="8"/>
-                            <LineBreak/>
-                            <LineBreak/>
-                            <Run Text="{Binding Adresse}"/>
-                            <LineBreak/>
-                            <Run Text="Tlf: "/>
-                            <Run Text="{Binding Tlf}"/>
-                            <LineBreak/>
-                            <LineBreak/>
-                            <Run Text="Kategori: "/>
-                            <Run Text="{Binding Kategori}"/>
-                        </TextBlock>
-                    </StackPanel>
-                </Grid>
-
-                <TextBlock VerticalAlignment="Center" Text="{Binding Navn}" Margin="10,5,0,0" FontSize="30" FontWeight="Bold" Grid.Row="0"/>
-
+            <Grid Height="200" Width="200">
+                <Grid.Background>
+                    <ImageBrush ImageSource="{Binding Img}" Stretch="UniformToFill"/>
+                </Grid.Background>
                 
-
+                <StackPanel Height="40" VerticalAlignment="Bottom" Background="#99343232" Opacity="0.9">
+                    <TextBlock Text="{Binding Navn}"/>
+                </StackPanel>
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
